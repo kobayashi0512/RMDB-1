@@ -1,0 +1,252 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2026-09-14T08:27:25Z",
+      "timestamp": 1789374445800,
+      "version": "build-2803163510"
+    },
+    "reference-count": 8,
+    "publisher": "Elsevier BV",
+    "issue": "8476",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1986,
+              2,
+              1
+            ]
+          ],
+          "date-time": "1986-02-01T00:00:00Z",
+          "timestamp": 507600000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "The Lancet"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1986,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0140-6736(86)90837-8",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2003-09-17T01:14:15Z",
+      "timestamp": 1063761255000
+    },
+    "page": "307-310",
+    "source": "Crossref",
+    "is-referenced-by-count": 38194,
+    "title": [
+      "STATISTICAL METHODS FOR ASSESSING AGREEMENT BETWEEN TWO METHODS OF CLINICAL MEASUREMENT"
+    ],
+    "prefix": "10.1016",
+    "volume": "327",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Martin Bland",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "DouglasG.",
+        "family": "Altman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB1",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.2307/2987937",
+        "article-title": "Measurement in medicine: the analysis of method comparison studies",
+        "volume": "32",
+        "author": "Altman",
+        "year": "1983",
+        "journal-title": "Statistician"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB2",
+        "doi-asserted-by": "crossref",
+        "first-page": "509",
+        "DOI": "10.1136/adc.53.6.509",
+        "article-title": "Estimation of gestational age at birth: comparison of two methods",
+        "volume": "53",
+        "author": "Serfontein",
+        "year": "1978",
+        "journal-title": "Arch Dis Child"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.1136/thx.34.6.807",
+        "article-title": "Comparison of the new miniature Wright peak flow meter with the standard Wright peak flow meter",
+        "volume": "34",
+        "author": "Oldham",
+        "year": "1979",
+        "journal-title": "Thorax"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB4",
+        "doi-asserted-by": "crossref",
+        "first-page": "567",
+        "DOI": "10.1016/S0140-6736(85)91219-X",
+        "article-title": "Relationship between initial blood pressure and its fall with treatment",
+        "volume": "i",
+        "author": "Gill",
+        "year": "1985",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ja Tytler, Hf Seeley, The Nellcor N-101 pulse oximeter, Anaesthesia ((in press)).",
+        "DOI": "10.1111/j.1365-2044.1986.tb12793.x"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB6",
+        "unstructured": "Pg D'Arbela, Zm Silayan, Jm Bland, Comparability of M-mode echocardiography long axis and short axis left ventricular function derivatives (Unpublished)."
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB7",
+        "series-title": "Precision of test methods I. Guide for the determination and reproducibility for a standard test method (BS 5497, part 1)",
+        "author": "British Standards Institution",
+        "year": "1979"
+      },
+      {
+        "key": "10.1016/S0140-6736(86)90837-8_BIB8",
+        "series-title": "Statistical methods in medical research",
+        "author": "Armitage",
+        "year": "1971"
+      }
+    ],
+    "container-title": [
+      "The Lancet"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0140673686908378?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0140673686908378?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          2,
+          24
+        ]
+      ],
+      "date-time": "2019-02-24T06:20:28Z",
+      "timestamp": 1550989228000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140673686908378"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1986,
+          2
+        ]
+      ]
+    },
+    "references-count": 8,
+    "journal-issue": {
+      "issue": "8476",
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0140673686908378"
+    ],
+    "URL": "https://doi.org/10.1016/s0140-6736(86)90837-8",
+    "relation": {},
+    "ISSN": [
+      "0140-6736"
+    ],
+    "issn-type": [
+      {
+        "value": "0140-6736",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1986,
+          2
+        ]
+      ]
+    }
+  }
+}

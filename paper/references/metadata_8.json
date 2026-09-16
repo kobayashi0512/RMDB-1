@@ -1,0 +1,745 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T21:52:00Z",
+      "timestamp": 1787003520240,
+      "version": "build-2736575974"
+    },
+    "reference-count": 40,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              22
+            ]
+          ],
+          "date-time": "2025-02-22T00:00:00Z",
+          "timestamp": 1740182400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              22
+            ]
+          ],
+          "date-time": "2025-02-22T00:00:00Z",
+          "timestamp": 1740182400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Data"
+    ],
+    "DOI": "10.1038/s41597-025-04627-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2025-02-22T07:44:58Z",
+      "timestamp": 1740210298000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 14,
+    "title": [
+      "A portable retina fundus photos dataset for clinical, demographic, and diabetic retinopathy prediction"
+    ],
+    "prefix": "10.1038",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Chenwei",
+        "family": "Wu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3789-1957",
+        "authenticated-orcid": false,
+        "given": "David",
+        "family": "Restrepo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6847-6748",
+        "authenticated-orcid": false,
+        "given": "Luis Filipe",
+        "family": "Nakayama",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lucas",
+        "family": "Zago Ribeiro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zitao",
+        "family": "Shuai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nathan Santos",
+        "family": "Barboza",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria Luiza Vieira",
+        "family": "Sousa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raul Dias",
+        "family": "Fitterman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexandre Durao Alves",
+        "family": "Pereira",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Caio Vinicius Saito",
+        "family": "Regatieri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jose Augusto",
+        "family": "Stuchi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fernando Korn",
+        "family": "Malerbi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rafael E.",
+        "family": "Andrade",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "4627_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "198",
+        "DOI": "10.1089/tmj.2015.0068",
+        "volume": "22",
+        "author": "N Panwar",
+        "year": "2016",
+        "unstructured": "Panwar, N. et al. Fundus Photography in the 21st Century–A Review of Recent Technological Advances and Their Implications for Worldwide Healthcare. Telemed. J. E. Health. 22, 198–208 (2016).",
+        "journal-title": "Telemed. J. E. Health."
+      },
+      {
+        "key": "4627_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "741",
+        "DOI": "10.1016/S0161-6420(13)38009-9",
+        "volume": "98",
+        "author": "Early Treatment Diabetic Retinopathy Study design and baseline patient characteristics",
+        "year": "1991",
+        "unstructured": "Early Treatment Diabetic Retinopathy Study design and baseline patient characteristics. ETDRS report number 7. Ophthalmology 98, 741–756 (1991).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "4627_CR3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12886-019-1092-3",
+        "volume": "19",
+        "author": "MMPN Piyasena",
+        "year": "2019",
+        "unstructured": "Piyasena, M. M. P. N., Yip, J. L. Y., MacLeod, D., Kim, M. & Gudlavalleti, V. S. M. Diagnostic test accuracy of diabetic retinopathy screening by physician graders using a hand-held non-mydriatic retinal camera at a tertiary level medical clinic. BMC Ophthalmol. 19, 89 (2019).",
+        "journal-title": "BMC Ophthalmol."
+      },
+      {
+        "key": "4627_CR4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Midena, E. et al. Handheld Fundus Camera for Diabetic Retinopathy Screening: A Comparison Study with Table-Top Fundus Camera in Real-Life Setting. J. Clin. Med. Res. 11 (2022).",
+        "DOI": "10.3390/jcm11092352"
+      },
+      {
+        "key": "4627_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "548",
+        "DOI": "10.1016/j.oret.2022.03.002",
+        "volume": "6",
+        "author": "RP Salongcay",
+        "year": "2022",
+        "unstructured": "Salongcay, R. P. et al. Comparison of Handheld Retinal Imaging with ETDRS 7-Standard Field Photography for Diabetic Retinopathy and Diabetic Macular Edema. Ophthalmol Retina 6, 548–556 (2022).",
+        "journal-title": "Ophthalmol Retina"
+      },
+      {
+        "key": "4627_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1186/s40662-020-00182-7",
+        "volume": "7",
+        "author": "G Lim",
+        "year": "2020",
+        "unstructured": "Lim, G. et al. Different fundus imaging modalities and technical factors in AI screening for diabetic retinopathy: a review. Eye Vis (Lond) 7, 21 (2020).",
+        "journal-title": "Eye Vis (Lond)"
+      },
+      {
+        "key": "4627_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "e038647",
+        "DOI": "10.1136/bmjopen-2020-038647",
+        "volume": "10",
+        "author": "K Curran",
+        "year": "2020",
+        "unstructured": "Curran, K. et al. Inclusion of diabetic retinopathy screening strategies in national-level diabetes care planning in low-income and middle-income settings: protocol for a scoping review. BMJ Open 10, e038647 (2020).",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "4627_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nakayama, L. F. et al. Unmasking Biases and Navigating Pitfalls in the Ophthalmic Artificial Intelligence Lifecycle: A Review. arXiv [cs.CY] (2023).",
+        "DOI": "10.1371/journal.pdig.0000618"
+      },
+      {
+        "key": "4627_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "375",
+        "DOI": "10.1038/eye.2017.199",
+        "volume": "32",
+        "author": "S Sengupta",
+        "year": "2018",
+        "unstructured": "Sengupta, S. et al. Screening for vision-threatening diabetic retinopathy in South India: comparing portable non-mydriatic and standard fundus cameras and clinical exam. Eye 32, 375–383 (2018).",
+        "journal-title": "Eye"
+      },
+      {
+        "key": "4627_CR10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12886-017-0484-5",
+        "volume": "17",
+        "author": "K Jin",
+        "year": "2017",
+        "unstructured": "Jin, K. et al. Telemedicine screening of retinal diseases with a handheld portable non-mydriatic fundus camera. BMC Ophthalmol. 17, 89 (2017).",
+        "journal-title": "BMC Ophthalmol."
+      },
+      {
+        "key": "4627_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1771",
+        "DOI": "10.1111/aos.15170",
+        "volume": "100",
+        "author": "FK Malerbi",
+        "year": "2022",
+        "unstructured": "Malerbi, F. K. & Andrade, R. E. Real-World diabetic retinopathy screening with a handheld fundus camera in a high-burden setting. Acta Ophthalmol. 100, e1771 (2022).",
+        "journal-title": "Acta Ophthalmol."
+      },
+      {
+        "key": "4627_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "2919",
+        "DOI": "10.2147/OPTH.S410425",
+        "volume": "17",
+        "author": "J Caceres",
+        "year": "2023",
+        "unstructured": "Caceres, J. et al. Diabetic Retinopathy Screening Using a Portable Retinal Camera in Vanuatu. Clin. Ophthalmol. 17, 2919–2927 (2023).",
+        "journal-title": "Clin. Ophthalmol."
+      },
+      {
+        "key": "4627_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "e51",
+        "DOI": "10.1016/S2589-7500(20)30240-5",
+        "volume": "3",
+        "author": "SM Khan",
+        "year": "2021",
+        "unstructured": "Khan, S. M. et al. A global review of publicly available datasets for ophthalmological imaging: barriers to access, usability, and generalisability. Lancet Digit. Health 3, e51–e66 (2021).",
+        "journal-title": "Lancet Digit. Health"
+      },
+      {
+        "key": "4627_CR14",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Nakayama, L. F. et al. mBRSET, a Mobile Brazilian Retinal Dataset. PhysioNet https://doi.org/10.13026/QXPD-1Y65 (2024).",
+        "DOI": "10.13026/QXPD-1Y65"
+      },
+      {
+        "key": "4627_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "495",
+        "DOI": "10.1590/1678-4685-gmb-2018-0076",
+        "volume": "42",
+        "author": "AM Souza",
+        "year": "2019",
+        "unstructured": "Souza, A. M., de, Resende, S. S., Sousa, T. N. de & Brito, C. F. A. de A systematic scoping review of the genetic ancestry of the Brazilian population. Genet. Mol. Biol. 42, 495–508 (2019).",
+        "journal-title": "Genet. Mol. Biol."
+      },
+      {
+        "key": "4627_CR16",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Malerbi, F. K. et al. Diabetic Retinopathy Screening Using Artificial Intelligence and Handheld Smartphone-Based Retinal Camera. J. Diabetes Sci. Technol. 1932296820985567, https://doi.org/10.1177/1932296820985567 (2021).",
+        "DOI": "10.1177/1932296820985567"
+      },
+      {
+        "key": "4627_CR17",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Nakayama, L. F., Gonçalves, M. B., Ribeiro, L. Z., Malerbi, F. K. & Regatieri, C. V. S. Diabetic Retinopathy Labeling Protocol for the Brazilian Multilabel Ophthalmological Dataset. https://doi.org/10.31219/osf.io/puznm (2023).",
+        "DOI": "10.31219/osf.io/puznm"
+      },
+      {
+        "key": "4627_CR18",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Nakayama, L. F. et al. BRSET: A Brazilian Multilabel Ophthalmological Dataset of Retina Fundus Photos. medRxiv https://doi.org/10.1101/2024.01.23.24301660 (2024).",
+        "DOI": "10.1101/2024.01.23.24301660"
+      },
+      {
+        "key": "4627_CR19",
+        "unstructured": "Diabetic retinopathy detection. https://www.kaggle.com/c/diabetic-retinopathy-detection."
+      },
+      {
+        "key": "4627_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "231",
+        "DOI": "10.5566/ias.1155",
+        "volume": "33",
+        "author": "E Decencière",
+        "year": "2014",
+        "unstructured": "Decencière, E. et al. Feedback on a publicly distributed image database: The Messidor database. Image Anal. Stereol. 33, 231 (2014).",
+        "journal-title": "Image Anal. Stereol."
+      },
+      {
+        "key": "4627_CR21",
+        "first-page": "14",
+        "volume": "6",
+        "author": "S Pachade",
+        "year": "2021",
+        "unstructured": "Pachade, S. et al. Retinal Fundus Multi-Disease Image Dataset (RFMiD): A Dataset for Multi-Disease Detection Research. Brown Univ. Dig. Addict. Theory Appl. 6, 14 (2021).",
+        "journal-title": "Brown Univ. Dig. Addict. Theory Appl."
+      },
+      {
+        "key": "4627_CR22",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Khan, S. M. et al. A global review of publicly available datasets for ophthalmological imaging: barriers to access, usability, and generalisability. The Lancet Digital Health https://doi.org/10.1016/S2589-7500(20)30240-5 (2020).",
+        "DOI": "10.1016/S2589-7500(20)30240-5"
+      },
+      {
+        "key": "4627_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "109119",
+        "DOI": "10.1016/j.diabres.2021.109119",
+        "volume": "183",
+        "author": "H Sun",
+        "year": "2022",
+        "unstructured": "Sun, H. et al. IDF Diabetes Atlas: Global, regional and country-level diabetes prevalence estimates for 2021 and projections for 2045. Diabetes Res. Clin. Pract. 183, 109119 (2022).",
+        "journal-title": "Diabetes Res. Clin. Pract."
+      },
+      {
+        "key": "4627_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "161",
+        "DOI": "10.1016/j.preteyeres.2007.12.001",
+        "volume": "27",
+        "author": "N Cheung",
+        "year": "2008",
+        "unstructured": "Cheung, N. & Wong, T. Y. Diabetic retinopathy and systemic vascular complications. Prog. Retin. Eye Res. 27, 161–176 (2008).",
+        "journal-title": "Prog. Retin. Eye Res."
+      },
+      {
+        "key": "4627_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-021-89743-x",
+        "volume": "11",
+        "author": "E Korot",
+        "year": "2021",
+        "unstructured": "Korot, E. et al. Predicting sex from retinal fundus photographs using automated deep learning. Sci. Rep. 11, 10286 (2021).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "4627_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "158",
+        "DOI": "10.1038/s41551-018-0195-0",
+        "volume": "2",
+        "author": "R Poplin",
+        "year": "2018",
+        "unstructured": "Poplin, R. et al. Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning. Nat Biomed Eng 2, 158–164 (2018).",
+        "journal-title": "Nat Biomed Eng"
+      },
+      {
+        "key": "4627_CR27",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Woo, S. et al. ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders. in 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) https://doi.org/10.1109/cvpr52729.2023.01548 (IEEE, 2023).",
+        "DOI": "10.1109/cvpr52729.2023.01548"
+      },
+      {
+        "key": "4627_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "He, K., Zhang, X., Ren, S. & Sun, J. Deep Residual Learning for Image Recognition. arXiv [cs.CV] (2015).",
+        "DOI": "10.1109/CVPR.2016.90"
+      },
+      {
+        "key": "4627_CR29",
+        "unstructured": "Oquab, M. et al. DINOv2: Learning Robust Visual Features without Supervision. arXiv [cs.CV] (2023)."
+      },
+      {
+        "key": "4627_CR30",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Wu, C. et al. De-identification and Obfuscation of Gender Attributes from Retinal Scans. in Clinical Image-Based Procedures, Fairness of AI in Medical Imaging, and Ethical and Philosophical Issues in Medical Imaging 91–101, https://doi.org/10.1007/978-3-031-45249-9_9 (Springer Nature Switzerland, 2023).",
+        "DOI": "10.1007/978-3-031-45249-9_9"
+      },
+      {
+        "key": "4627_CR31",
+        "first-page": "2399",
+        "volume": "64",
+        "author": "LF Nakayama",
+        "year": "2023",
+        "unstructured": "Nakayama, L. F. et al. Pixel Snow and Differential Privacy in Retinal fundus photos de-identification. Invest. Ophthalmol. Vis. Sci. 64, 2399–2399 (2023).",
+        "journal-title": "Invest. Ophthalmol. Vis. Sci."
+      },
+      {
+        "key": "4627_CR32",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Gould, D. S. W., Yang, J. & Clifton, D. A. Deep Learning for Multi-Label Disease Classification of Retinal Images: Insights from Brazilian Data for AI Development in Lower-Middle Income Countries. medRxiv 2024.02.12.24302676, https://doi.org/10.1101/2024.02.12.24302676 (2024).",
+        "DOI": "10.1101/2024.02.12.24302676"
+      },
+      {
+        "key": "4627_CR33",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Liu, Z. et al. Swin Transformer: Hierarchical vision Transformer using shifted windows. ICCV 9992–10002, https://doi.org/10.1109/ICCV48922.2021.00986 (2021).",
+        "DOI": "10.1109/ICCV48922.2021.00986"
+      },
+      {
+        "key": "4627_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "3664",
+        "DOI": "10.1093/brain/awab342",
+        "volume": "144",
+        "author": "ES Vasileiou",
+        "year": "2021",
+        "unstructured": "Vasileiou, E. S. et al. Socioeconomic disparity is associated with faster retinal neurodegeneration in multiple sclerosis. Brain 144, 3664–3673 (2021).",
+        "journal-title": "Brain"
+      },
+      {
+        "key": "4627_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "103451",
+        "DOI": "10.1016/j.msard.2021.103451",
+        "volume": "58",
+        "author": "DA Pimentel Maldonado",
+        "year": "2022",
+        "unstructured": "Pimentel Maldonado, D. A. et al. The impact of socioeconomic status on mental health and health-seeking behavior across race and ethnicity in a large multiple sclerosis cohort. Mult. Scler. Relat. Disord. 58, 103451 (2022).",
+        "journal-title": "Mult. Scler. Relat. Disord."
+      },
+      {
+        "key": "4627_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "S53",
+        "DOI": "10.1016/j.ajo.2011.08.045",
+        "volume": "154",
+        "author": "X Zhang",
+        "year": "2012",
+        "unstructured": "Zhang, X. et al. Vision health disparities in the United States by race/ethnicity, education, and economic status: findings from two nationally representative surveys. Am. J. Ophthalmol. 154, S53–62.e1 (2012).",
+        "journal-title": "Am. J. Ophthalmol."
+      },
+      {
+        "key": "4627_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.1136/bjophthalmol-2021-319807",
+        "volume": "107",
+        "author": "Z Zhu",
+        "year": "2023",
+        "unstructured": "Zhu, Z. et al. Retinal age gap as a predictive biomarker for mortality risk. Br. J. Ophthalmol. 107, 547–554 (2023).",
+        "journal-title": "Br. J. Ophthalmol."
+      },
+      {
+        "key": "4627_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1677",
+        "DOI": "10.1016/S0161-6420(03)00475-5",
+        "volume": "110",
+        "author": "CP Wilkinson",
+        "year": "2003",
+        "unstructured": "Wilkinson, C. P. et al. Proposed international clinical diabetic retinopathy and diabetic macular edema disease severity scales. Ophthalmology 110, 1677–1682 (2003).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "4627_CR39",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Nakayama, L. F. et al. A Brazilian Multilabel Ophthalmological Dataset (BRSET). PhysioNet https://doi.org/10.13026/XCXW-8198 (2023).",
+        "DOI": "10.13026/XCXW-8198"
+      },
+      {
+        "key": "4627_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "509",
+        "DOI": "10.1177/193229680900300315",
+        "volume": "3",
+        "author": "J Cuadros",
+        "year": "2009",
+        "unstructured": "Cuadros, J. & Bresnick, G. EyePACS: an adaptable telemedicine system for diabetic retinopathy screening. J. Diabetes Sci. Technol. 3, 509–516 (2009).",
+        "journal-title": "J. Diabetes Sci. Technol."
+      }
+    ],
+    "container-title": [
+      "Scientific Data"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-04627-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-04627-3",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-04627-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2025-02-22T07:45:04Z",
+      "timestamp": 1740210304000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41597-025-04627-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          22
+        ]
+      ]
+    },
+    "references-count": 40,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "4627"
+    ],
+    "URL": "https://doi.org/10.1038/s41597-025-04627-3",
+    "relation": {},
+    "ISSN": [
+      "2052-4463"
+    ],
+    "issn-type": [
+      {
+        "value": "2052-4463",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          22
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "23 September 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "12 February 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 February 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors have no competing interests as defined by Nature Research, or other interests that might be perceived to influence the interpretation of the article.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "323"
+  }
+}

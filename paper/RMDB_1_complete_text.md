@@ -1,0 +1,344 @@
+# RMDB Dual Readouts for Retinal Vascular Measurement
+
+## Abstract
+
+We examine how probability readouts affect retinal vascular measurement under a frozen VascX backbone and a common phenotype extractor. Residual correction and occupancy conditioning are evaluated separately against raw probabilities to characterize structural fidelity and same-eye measurement agreement. Structural evaluation uses 100 Fundus-AVSeg images; agreement analysis uses 475 repeated eyes from 255 contributors in a historical Mobile Brazilian Retinal Dataset (mBRSET) subset. Twelve phenotypes are assessed using the intraclass correlation coefficient (ICC), within-eye mean absolute deviation (MAD), pooled within-eye standard deviation and limits of agreement. Historical residual correction increases vessel Dice from 0.8556 to 0.8647 but decreases precision from 0.9396 to 0.9096. Occupancy conditioning increases ICC point estimates for nine phenotypes; among these, only branch density, endpoint density and occupancy entropy also have intervals supporting lower MAD. For the artery-to-vein (A/V) mass ratio, ICC decreases from 0.5340 to 0.3639 and MAD increases by 44.72%. An output-level decomposition explains how preserved local identity permits altered aggregate A/V balance. Supporting matched-update controls and residual retraining reveal no uniform improvement across endpoints. A retrained configuration also shows higher component-count ICC with greater absolute disagreement. These exploratory findings expose endpoint-dependent tradeoffs rather than identify a universally superior readout. Independent high-resolution repeat acquisitions remain necessary before clinical confirmation.
+
+Keywords: retinal vascular measurement; probability readouts; structural fidelity; measurement agreement; occupancy conditioning
+
+## 1. Introduction
+
+Automated retinal image analysis converts a photograph into measurements through several decisions. A segmentation model assigns probabilities to pixels, a readout determines how those probabilities contribute to vessel support or identity, and a measurement operator summarizes the resulting representation. VascX and retinalysis make vascular segmentation and feature extraction accessible within broader image-analysis workflows [1,2].<!--ref:vascx--><!--anchor:section:Introduction%20contribution%20items%202%E2%80%933%3B%20Methods%2FEvaluation--><!--ref:retinalysis--><!--anchor:section:Abstract%20paragraphs%201%E2%80%933%3B%20submission%20history--> Their use also brings a methodological question into focus: when the segmentation representation remains fixed, which changes at the readout stage improve the measurements of interest? The answer matters because an intervention can alter the information entering a descriptor without changing its name or formula.
+
+A binary vessel score and a repeated-image measurement address different properties of an analysis. Dice measures overlap with a reference segmentation in a photograph. A vessel-mass descriptor averages probability over the retinal field, whereas a branch-density descriptor summarizes a thresholded skeleton. Repeated-image agreement asks how much the resulting quantity changes between views of the same eye. These properties can respond differently to a common intervention. Increasing support in weakly represented vessels can recover reference pixels while also admitting false positives. Reweighting uncertain regions can alter aggregate artery and vein contributions even if their conditional proportions remain unchanged at every pixel. A readout therefore deserves evaluation as a measurement component in its own right.
+
+Prior work already studies the relationship between vessel segmentation performance and retest reliability [3].<!--ref:giesser--><!--anchor:section:Abstract%20Methods%2FResults%2FConclusions--> Camera-dependent reproducibility is also an established empirical question [4],<!--ref:camera--><!--anchor:section:Discussion%20opening%20summary%3B%20About%20this%20article--> and retinalysis version 4 includes cross-device and perturbation robustness analyses [2].<!--ref:retinalysis--><!--anchor:section:Abstract%20paragraphs%201%E2%80%933%3B%20submission%20history--> The present study does not claim to introduce reliability assessment to retinal imaging. Its narrower question concerns identifiable operations within one fixed representation and one common family of measurement operators. This design allows a comparison of residual correction, occupancy conditioning and simple controls without attributing their differences to a replacement backbone or to altered phenotype definitions.
+
+The RMDB study addresses that question through two parallel readouts. The residual-corrected readout applies a trained correction network to the frozen identity logits and can change both vessel support and conditional class composition. The occupancy-conditioned readout combines an independent vessel-occupancy estimate with the original conditional artery, vein and crossing proportions. It changes the spatial weight assigned to each pixel while retaining the raw identity proportions, apart from numerical floors. The constructions express different hypotheses about how the frozen probabilities should contribute to measurement. They are not consecutive stages: occupancy conditioning does not consume residual-corrected identity. Raw VascX probabilities remain the common reference throughout.
+
+The central question is how the two readouts alter structural fidelity and same-eye measurement agreement across endpoints (Figure 1). The structural and repeatability evidence comes from different datasets, so the comparison concerns performance profiles across two evaluation settings. It does not measure a within-eye causal relationship between segmentation accuracy and repeatability. Keeping these roles separate is useful: structural references constrain what a readout recovers, while repeated photographs reveal how stable its derived quantities are. A favorable result in one setting motivates examination in the other, but cannot replace it.
+
+Holding the measurement definition fixed is central to this question. If an intervention simultaneously changes probability calibration, the vessel threshold and the skeletonization rule, an observed difference combines several operations. In the present comparison, each readout enters the same extractor, including the same field mask, numerical floors and grid sizes. The resulting contrasts remain conditional on that extractor, but their meaning is narrower and easier to inspect. Simple smoothing and component cleanup also provide reference points for evaluating whether the response requires the learned correction or independent occupancy branch. This finite comparison does not exhaust possible readouts; it establishes a reproducible set of operations against which subsequent designs can state a specific incremental claim.
+
+To explain the artery-to-vein (A/V) agreement response, a secondary analysis examines the apparent tension between local identity preservation and global A/V balance. Multiplication by an occupancy field preserves each pixel's conditional identity but changes its weight in an image-wide sum. A region with a different artery-to-vein composition can contribute more strongly after conditioning. RMDB makes this relationship explicit and uses paired images to determine how the additional reweighting enters log-ratio disagreement. The decomposition is an explanation at the output level. It does not identify illumination, camera hardware or biological change as the cause of a difference between photographs.
+
+Supporting control analyses test whether more elaborate interventions improve on simpler alternatives. A confidence-weighted occupancy update is compared with a budget-matched uniform update that has the same integrated absolute magnitude for each image. This control tests the value of spatial placement beyond the amount of change. A separate retraining extension examines residual inputs, update count and a convolutional alternative under a shared short training budget. Both experiments retain unfavorable findings and avoid selecting a best setting or seed from the historical test results. Their purpose is to test specific design explanations and expose their limits.
+
+The contribution is a controlled characterization of endpoint-dependent readout tradeoffs, supported by an output-level A/V decomposition and bounded intervention controls. Reporting the intraclass correlation coefficient (ICC) with absolute-agreement measures follows established measurement practice [9,10];<!--ref:koo--><!--anchor:section:Abstract%2FDiscussion%20for%20Researchers%3B%20section%20How%20to%20Select%20the%20Correct%20ICC%20Form--><!--ref:bland--><!--anchor:section:Abstract%3B%20differences%2Flimits-of-agreement%20methodology--> the statistics themselves are not new. The practical value lies in connecting a defined operation to a complete set of endpoint responses, including cases where apparently favorable reliability accompanies greater disagreement. All analyses are exploratory. The historical evaluation data have already informed the investigation, and a new untouched confirmation cohort remains necessary before any readout can be admitted for a specified clinical application.
+
+**Figure artwork withheld from this repository pending source-image redistribution clearance.**
+
+Figure 1. RMDB study framework. Solid branches carry the frozen VascX representation; dashed branches supply RGB to the two readouts. Each arm uses the same extraction rules, including raw-based smoothing and cleanup controls. RAV and FIVES support readout development, not independent confirmation. Structure uses Fundus-AVSeg images and binary vessel references; agreement uses 950 historical mBRSET views from 475 eyes and 255 contributors. Colored annotations illustrate source labels that are binarized for structural scoring. Supporting analyses remain exploratory. Examples are original database images; mBRSET views are manifest-paired, without verified temporal ordering. ICC: intraclass correlation coefficient; MAD: within-eye mean absolute deviation; SEM: standard error of measurement; LoA: limits of agreement. Arrows sharing an extractor denote separate applications, not probability fusion.
+
+## 2. Materials and Methods
+
+### 2.1. Study design and dataset roles
+
+The study separates development, structural evaluation and repeated-image assessment. The fundus image vessel segmentation (FIVES) dataset supports development of the occupancy estimator [5],<!--ref:fives--><!--anchor:section:Methods%2FData%20collection%3B%20Data%20Records--> and the local Rotterdam Artery-Vein Segmentation Dataset (RAV) collection supports residual-corrector development [6].<!--ref:rav--><!--anchor:section:DataCite%20attributes%20creators%2Ctitles%2CpublicationYear%2Cversion%2Cdescriptions%20at%20https%3A%2F%2Fapi.datacite.org%2Fdois%2F10.34894%2F9OIMWY--> The fundus artery-vein segmentation dataset (Fundus-AVSeg) supplies 100 previously inspected images with manual vascular annotations for structural evaluation [7].<!--ref:fundus--><!--anchor:section:Data%20Records%3B%20Technical%20Validation%2FDataset%20characteristics--> A local Mobile Brazilian Retinal Dataset (mBRSET) mirror supplies repeated photographs grouped by patient and laterality [8].<!--ref:mbrset--><!--anchor:section:Abstract%3B%20PhysioNet%20https%3A%2F%2Fphysionet.org%2Fcontent%2Fmbrset%2F1.0%2F%20description%20and%20Access%20Policy--> High-Resolution Fundus (HRF) image-quality pairs and digital downsampling provide supplementary sensitivity evidence. The resource roles and analyzed units appear in Table 1. Counts describe the local analytical material and should not be interpreted as a restatement of every source repository's full inventory.
+
+Table 1. Dataset roles, local analytical units and interpretation boundaries. Repeated-eye contributors are distinguished from all patients in a partition. Structural and repeatability datasets have separate roles, and the historical evaluation subsets do not constitute untouched confirmation.
+
+| Resource | Analyzed units | Role |
+| --- | --- | --- |
+| FIVES | Development resource; 800 source images | Occupancy development |
+| RAV | 206 locally available labeled images | Residual development; not independent validation |
+| Fundus-AVSeg | 100 images | Previously inspected binary structural reference |
+| mBRSET development | 978 inputs; 945 repeat images, 472 eyes, 253 contributors | Historical repeatability development subset |
+| mBRSET historical test | 982 inputs; 950 repeat images, 475 eyes, 255 contributors | Patient-separated historical evaluation |
+| HRF quality / resolution | 36 quality images; 18 good originals for scaling | Supplementary sensitivity, shared source eyes |
+
+The mBRSET input manifest contains 1,960 images. Its patient-separated development partition contains 978 images from 257 patients, while the historical test partition contains 982 images from 258 patients. Excluding single-capture eyes leaves 945 development images from 472 eyes and 253 contributors, and 950 test images from 475 eyes and 255 contributors. All test repeated eyes have two images; the development subset includes an additional view. Single-capture eyes do not contribute to repeatability estimates. The local image mirror has 224-pixel resolution, which remains a limitation even though subsequent computation uses larger grids.
+
+The analysis chronology distinguishes the original frozen comparison, the later reweighting and confidence experiments, and the subsequent residual retraining. Frozen denotes weights and operations held fixed during evaluation; the occupancy and residual networks themselves require development. Outcome-blind processing means that clinical outcome columns do not determine readout selection or phenotype extraction. It does not remove bias from previous inspection of images or results. Data access also remains source-specific: mBRSET has credentialed access and data-use conditions, and the local RAV count is not interchangeable with the public record's subset counts or license terms.
+
+### 2.2. Common geometry and raw representation
+
+Saved image-derived bounds define a canonical 1024 × 1024 crop. The same geometric transform maps each structural annotation into the photograph's coordinates, using nearest-neighbor interpolation for labels. During evaluation, red-green-blue (RGB) images are resized bilinearly to 512 × 512, and cached VascX logits are resized bilinearly before softmax. Residual retraining instead samples 256 × 256 patches directly from aligned 1024 × 1024 RGB, logit and label caches. The valid evaluation field Ω contains pixels whose maximum RGB channel exceeds 10 on the 512 grid. This field and the phenotype operators are common to all evaluated readouts. The analysis does not perform optic-disc–fovea axis registration. Upsampling standardizes computation but does not restore spatial information absent from the original input.
+
+Let z denote the resized frozen logits and p the four-class probability vector for background B, artery A, vein V and crossing X. Raw vessel support is s, and q gives conditional identity within vessel support, with ε = 10⁻⁷. Here u indexes a pixel, k indexes a class, and softmax acts over the four classes:
+
+$$
+p_k(u)=\operatorname{softmax}(z(u))_k,\qquad s(u)=p_A(u)+p_V(u)+p_X(u),\qquad q_k(u)=\frac{p_k(u)}{\max\{s(u),\varepsilon\}},\quad k\in\{A,V,X\}.
+$$
+
+The denominator floor prevents unstable division at extremely low support. Accordingly, identity preservation is subject to numerical handling near that floor. All comparisons use the same raw representation for a given image. The independently trained occupancy estimator is a U-Net with a 34-layer residual network (ResNet34) encoder receiving ImageNet-normalized RGB and returning occupancy o between zero and one.
+
+### 2.3. Parallel readouts and fixed controls
+
+The residual-corrected readout (Figure 2a) uses 11 fixed feature channels: RGB, four logits clipped to [−12,12] and divided by six, normalized four-class entropy, and three Hessian-derived orientation and vesselness channels. The current four-class probabilities provide four additional channels at each update. A U-shaped correction block has widths 24, 48 and 96, skip concatenations, bilinear upsampling, convolution–group normalization (GroupNorm)–sigmoid linear unit (SiLU) blocks and a four-channel output. Let $F$ denote the 11 fixed channels and $f_\theta$ the shared corrector. The same parameters are reused for two additive logit updates; the diagram abbreviates the corrector output as Δz(t):
+
+$$
+z^{(0)}=z,\qquad z^{(t+1)}=z^{(t)}+f_\theta\!\left(F,\operatorname{softmax}(z^{(t)})\right),\quad t=0,1,\qquad p^{\mathrm{res}}=\operatorname{softmax}(z^{(2)}).
+$$
+
+The historical result key mass denotes this residual-corrected readout. It does not imply exact conservation of vessel probability mass. RAV contributes to development and cannot serve as independent validation of the correction. A separate experiment truncates the frozen recurrence after zero, one or two updates; this tests the behavior of existing weights rather than the performance of models trained for different update counts.
+
+The occupancy-conditioned readout (Figure 2b) preserves raw conditional identity and replaces support. Fixed mixtures define the path between raw support and independent occupancy, with α equal to 0, 0.25, 0.50, 0.75 or 1:
+
+$$
+v_\alpha(u)=(1-\alpha)s(u)+\alpha o(u),\qquad p_B^{(\alpha)}(u)=1-v_\alpha(u),\qquad p_k^{(\alpha)}(u)=v_\alpha(u)q_k(u),\quad k\in\{A,V,X\}.
+$$
+
+The implementation uses the original raw probabilities at α = 0 and calls α = 1 the occupancy-conditioned arm. The diagram denotes its output by p(occ); this is $p^{(\alpha)}$ at α = 1, ordered as background, artery, vein and crossing. Diagram labels p(res), z(t) and p(t) denote the corresponding superscripted quantities in the equations, not multiplication. Neither the identity backbone nor the occupancy estimator is jointly trained through this mixing rule. Two fixed controls supplement the dual readouts. Gaussian smoothing uses σ = 1 pixel, reflect boundaries and truncation at four standard deviations, followed by channel renormalization. Component cleanup assigns background probability one to raw-support components smaller than 32 pixels on the 512 grid, using eight-connectivity. These controls are fixed examples of smoothing and cleanup, not optimized representatives of all possible postprocessing methods.
+
+**Figure artwork withheld from this repository pending source-image redistribution clearance.**
+
+Figure 2. Parallel readout operators. (a) Frozen logits initialize the state. Eleven fixed channels and four current probabilities enter the same corrector at each of two updates. Its four-channel output is added to the logits; the dashed loop supplies the next state. RGB is divided by 255, logits are clipped to [−12,12] and divided by six, and four-class entropy is normalized by log 4. (b) A separately developed occupancy estimator combines its output with raw VascX identity; p(occ) is the α = 1 arm. The maps illustrate the historical residual and occupancy-conditioned outputs for Fundus-AVSeg 001_G, not the retrained full configuration. Red and blue show arteries and veins. RGB: red-green-blue; GroupNorm: group normalization; SiLU: sigmoid linear unit; ResNet34: 34-layer residual network. Weights stay fixed during evaluation; neither readout consumes the other output.
+
+### 2.4. Supporting confidence and residual retraining controls
+
+The confidence experiment weights occupancy changes by one minus normalized entropy of q. Its comparison uses an image-specific uniform coefficient chosen to match exactly the integrated absolute occupancy update over Ω:
+
+$$
+g(u)=\operatorname{clip}\!\left(1-\frac{-\sum_k q_k(u)\log\max\{q_k(u),10^{-12}\}}{\log 3},0,1\right),\qquad \alpha_I=\frac{\sum_{u\in\Omega}g(u)|o(u)-s(u)|}{\max\{\sum_{u\in\Omega}|o(u)-s(u)|,10^{-12}\}},\qquad v_g=s+g(o-s),\quad v_I=s+\alpha_I(o-s).
+$$
+
+Both updates retain raw q. The matched quantity is the sum of absolute support changes, not the mean gate value or the final A/V ratio. Thus a difference between the two readouts concerns where changes are applied under the matched budget. Entropy is a candidate weighting signal; the study does not assume that it is calibrated confidence. Together with the five core arms and three intermediate mixtures, these two controls yield ten evaluated readouts.
+
+The retraining extension contains full, no-RGB, no-logit-input, no-entropy-input, no-Hessian-input, one-step and plain-convolution configurations, each with three seeds. Input ablations zero the corresponding fixed channels while retaining intact features for all loss terms. Removing the logit feature channels does not remove the initial logits or the current softmax from the recurrence. The reconstructed image split contains 179 training, 20 validation and seven historical camera-holdout images. Training uses three epochs, batch size four, two 256-pixel crops per training image per epoch, AdamW with learning rate 0.0002 and weight decay 0.0001, and gradient clipping at five. The final epoch supplies each evaluated checkpoint. Shared crop schedules and optimizer updates support controlled comparisons; the plain-convolution configuration matches parameter count within 10%, not computation. The extension is not an exact replay of the incompletely recorded legacy training recipe, and three epochs do not demonstrate convergence.
+
+The shared retraining objective combines cross-entropy with soft Dice, directional, vessel binary-cross-entropy and identity terms, using respective additional weights 0.5, 0.1, 0.1 and 0.01. Cross-entropy uses class weights (0.20, 1, 1, 2) for B/A/V/X and ignores unlabeled pixels. The directional term sums the absolute projections of artery and vein probability gradients onto the Hessian tangent, weighted by vesselness and one minus normalized entropy on valid noncrossing pixels. The identity term is the mean squared change from the base logits, weighted by one minus entropy; unlike the supervised losses, it is not restricted by the valid-label mask. Artery–vein mass and vessel-mass penalty weights are explicitly zero in this extension. Validation is logged without selecting a best epoch or configuration. This distinction prevents the term full from implying reproduction of the historical mass-calibrated objective. The feature-removal comparisons test access through network inputs while keeping the loss definition fixed, so their interpretation is correspondingly limited to that intervention.
+
+### 2.5. Phenotypes and structural reference measurements
+
+Six soft descriptors comprise vessel mass, artery mass, vein mass, A/V mass ratio, occupancy entropy and conditional identity entropy. Six structural descriptors comprise vessel density, skeleton density, branch density, endpoint density, component count and fractal dimension. The shared extractor first clips each probability to [10⁻⁷,1]. Artery and vein mass both include crossing probability, while vessel mass counts it once:
+
+$$
+m_S=\langle p_A+p_V+p_X\rangle_\Omega,\qquad A=\langle p_A+p_X\rangle_\Omega,\qquad V=\langle p_V+p_X\rangle_\Omega,\qquad R=\frac{A}{\max\{V,10^{-7}\}}.
+$$
+
+Angle brackets denote the arithmetic mean over Ω. R is a probability-mass ratio, not a vessel-caliber ratio. Occupancy entropy is mean binary entropy over Ω; conditional identity entropy is the mean three-class conditional entropy divided by log 3. Thresholding vessel probability at 0.5 defines the binary mask. Vessel density uses Ω as denominator. Nearest-neighbor resizing to 256 × 256 precedes skeletonization, and skeleton, branch and endpoint densities use the complete 256² grid. Branch pixels have at least three skeleton neighbors, endpoints have one, and component count retains eight-connected mask components of at least eight pixels. Fractal dimension is the skeleton box-counting slope at box sizes 2, 4, 8, 16, 32 and 64. These are image-grid descriptors, not manual counts of anatomical junctions.
+
+Structural evaluation treats all nonblack annotation pixels, including uncertain-identity vessels, as binary vessel reference. Dice, precision, recall, thin-centerline recall and centerline Dice (clDice) describe recovery and false positives on the aligned 512 grid. clDice combines predicted-centerline inclusion in the reference mask with reference-centerline inclusion in the prediction [11].<!--ref:cldice--><!--anchor:section:3--> Thin-centerline recall uses reference skeleton pixels whose distance-transform radius is at most two pixels. Absolute differences between predicted and reference-derived values assess the six structural descriptors. Units remain endpoint-specific; there is no average across unlike errors.
+
+### 2.6. Supporting output-level reweighting decomposition
+
+For the secondary mechanism analysis, A and V denote unclipped soft masses calculated from raw support and conditional identity. Let ΔA and ΔV denote their changes after conditioning, and let R = A/V. Across the first two manifest-ordered views, e is the raw log-ratio difference, while a and b are the differences in artery and vein log reweighting. Primes denote occupancy-conditioned quantities. The log differences use the second minus first manifest-ordered view. The identities require positive raw and conditioned artery and vein masses:
+
+$$
+R'-R=\frac{\Delta A-R\Delta V}{V+\Delta V},\qquad e'=e+a-b,\qquad (e')^2-e^2=2e(a-b)+(a-b)^2=C_A+C_V,\qquad C_A=2ea+a^2-ab,\quad C_V=-2eb+b^2-ab.
+$$
+
+The symmetric artery and vein allocations divide their interaction equally. They sum to the total change, as do the original-error cross term and the added reweighting term. These are alternative decompositions and must not be combined as four additive sources. The identities describe computed outputs; they do not identify acquisition causes. Their unclipped log scale differs from the original ratio and mean within-eye absolute deviation endpoints, which retain the shared extractor's probability clipping and denominator floor.
+
+### 2.7. Agreement statistics and uncertainty
+
+ICC(1,1) uses a one-way random-effects, single-measure formulation [9].<!--ref:koo--><!--anchor:section:Abstract%2FDiscussion%20for%20Researchers%3B%20section%20How%20to%20Select%20the%20Correct%20ICC%20Form--> For G repeated eyes, eye i has nᵢ views, mean x̄ᵢ and within-eye residual sum of squares. With N total images and observation-weighted grand mean x̄, the implementation accommodates unequal view counts:
+
+$$
+B=\frac{\sum_i n_i(\bar{x}_i-\bar{x})^2}{G-1},\qquad W=\frac{\sum_i\sum_j(x_{ij}-\bar{x}_i)^2}{N-G},\qquad k_0=\frac{N-\sum_i n_i^2/N}{G-1},\qquad \operatorname{ICC}(1,1)=\frac{B-W}{B+(k_0-1)W}.
+$$
+
+Absolute agreement uses mean within-eye absolute deviation (MAD), the standard error of measurement (SEM), estimated here as the pooled within-eye standard deviation, and ordered-pair limits of agreement (LoA) [10].<!--ref:bland--><!--anchor:section:Abstract%3B%20differences%2Flimits-of-agreement%20methodology--> Indices satisfy i = 1, …, G and j = 1, …, nᵢ. Let dᵢ be the second minus first manifest-ordered measurement, d̄ its mean and s_d its sample standard deviation across repeated eyes:
+
+$$
+\operatorname{MAD}=\frac{1}{G}\sum_i\frac{1}{n_i}\sum_j|x_{ij}-\bar{x}_i|,\qquad \operatorname{SEM}=W^{1/2},\qquad \operatorname{LoA}=\bar d\pm1.96s_d.
+$$
+
+MAD gives each repeated eye equal weight. With two views it is half the absolute pair difference. SEM here denotes pooled within-eye standard deviation, not the standard error of a population mean. LoA use the first two manifest-ordered views; their direction has no verified temporal interpretation. Historical all-view ICC and MAD retain their original 10,000 patient-cluster bootstrap calculations. Historical structural contrasts use 5,000 paired image resamples. Follow-up and retraining intervals use 5,000 resamples; retraining crosses paired patient or image resampling with paired seed resampling. Both eyes and available views remain together when patients are resampled.
+
+The historical SEM and LoA summary uses the first two views; the extension's pooled within-eye standard deviation uses the available views. This distinction matters in the development subset, whereas the historical test subset contains exactly two views per repeated eye. The primary comparisons therefore share the same 950 test images without silently changing the contributor set between agreement statistics.
+
+Retrained group estimates average the metrics of three separately evaluated checkpoints. They are not metrics of averaged probabilities, and averaged LoA do not define a deployed ensemble's limits. Historical and follow-up intervals retain their own protocols. All twelve endpoints and adverse contrasts remain visible. Intervals are unadjusted exploratory percentile intervals; absence of a difference does not establish equivalence or noninferiority. Existing audits check source consistency and point estimates, but the independent point-check audit does not independently rerun bootstrap intervals.
+
+## 3. Results
+
+### 3.1. Core readouts have different structural and agreement profiles
+
+Historical residual correction increases mean binary vessel Dice from 0.8556 to 0.8647 on the 100-image structural benchmark. The paired increase is 0.0091, with a 95% interval of 0.0079 to 0.0103. Recall increases from 0.7862 to 0.8248, thin-centerline recall from 0.7971 to 0.8365, and clDice from 0.8879 to 0.8956. These changes show that the correction recovers additional reference support, including thin reference centerline pixels. Precision decreases from 0.9396 to 0.9096, with a paired difference of −0.0300 [−0.0307, −0.0293]. Thus the recovery gain carries a measurable false-positive cost.
+
+Table 2. Structural fidelity of the five core readouts on 100 Fundus-AVSeg images. Dice, precision, recall, thin-centerline recall and clDice are dimensionless scores, with higher values indicating greater agreement with the specified reference. Reference-derived absolute errors are reported separately in the accompanying results. No combined ranking is calculated.
+
+| Readout | Dice | Precision | Recall | Thin recall | clDice |
+| --- | --- | --- | --- | --- | --- |
+| Raw | 0.8556 | 0.9396 | 0.7862 | 0.7971 | 0.8879 |
+| Residual corrected | 0.8647 | 0.9096 | 0.8248 | 0.8365 | 0.8956 |
+| Occupancy conditioned | 0.8347 | 0.8560 | 0.8159 | 0.7608 | 0.8534 |
+| Gaussian smoothing | 0.8042 | 0.9481 | 0.6995 | 0.5708 | 0.7824 |
+| Component cleanup | 0.8498 | 0.9423 | 0.7748 | 0.7599 | 0.8739 |
+
+Residual correction also lowers vessel-density absolute error from 0.0199 to 0.0113 and fractal-dimension error from 0.0476 to 0.0321. Skeleton-density and branch-density errors decrease. The interval for component-count error change crosses zero, as does the endpoint-density error interval. Conditioning has the lowest vessel-density error, approximately 0.0071, but its Dice of 0.8347 and thin-centerline recall of 0.7608 are below raw. A favorable area summary therefore does not guarantee favorable structural overlap or thin-vessel recovery. Fixed smoothing yields precision of approximately 0.9481 with substantially lower thin-centerline recall, while cleanup remains closer to raw across these structural scores.
+
+The full twelve-endpoint historical agreement comparison appears in Table 3. Conditioning increases ICC point estimates for nine phenotypes. Branch density, endpoint density and occupancy entropy also have intervals supporting reduced MAD, with reductions of 22.28% [14.32, 29.59], 30.28% [22.66, 37.28] and 14.86% [7.09, 22.08], respectively. These three favorable patterns provide evidence that a support intervention can improve selected repeated-image descriptors. They do not identify a general improvement across the feature set.
+
+Table 3. Raw and occupancy-conditioned agreement for all twelve phenotypes in the historical test subset of 475 eyes from 255 contributors. ICC estimates and percentage MAD reductions retain the historical 10,000-resample patient-cluster protocol. Positive MAD reduction denotes lower absolute disagreement. Intervals are unadjusted and exploratory.
+
+| Phenotype | Raw ICC | Conditioned ICC | MAD reduction % [95% CI] |
+| --- | --- | --- | --- |
+| Vessel mass | 0.6315 (0.5668 to 0.6868) | 0.8120 (0.7700 to 0.8457) | -6.59 (-16.72 to 2.60) |
+| Artery mass | 0.5745 (0.5016 to 0.6379) | 0.7359 (0.6814 to 0.7798) | -18.05 (-28.71 to -8.17) |
+| Vein mass | 0.6504 (0.5880 to 0.7028) | 0.8168 (0.7750 to 0.8498) | -2.97 (-12.22 to 5.52) |
+| A/V mass ratio | 0.5340 (0.4480 to 0.6058) | 0.3639 (0.2688 to 0.4478) | -44.72 (-56.73 to -33.45) |
+| Vessel density | 0.6455 (0.5833 to 0.6993) | 0.8119 (0.7700 to 0.8453) | 1.33 (-8.00 to 9.82) |
+| Skeleton density | 0.6159 (0.5465 to 0.6756) | 0.7955 (0.7515 to 0.8314) | -12.33 (-22.53 to -3.08) |
+| Branch density | 0.5745 (0.4985 to 0.6429) | 0.6620 (0.6022 to 0.7143) | 22.28 (14.32 to 29.59) |
+| Endpoint density | 0.4921 (0.4114 to 0.5602) | 0.6065 (0.5292 to 0.6705) | 30.28 (22.66 to 37.28) |
+| Component count | 0.4682 (0.3764 to 0.5487) | 0.4633 (0.3717 to 0.5425) | 19.28 (10.72 to 27.02) |
+| Fractal dimension | 0.6056 (0.5243 to 0.6741) | 0.8063 (0.7506 to 0.8471) | -11.33 (-23.56 to -0.09) |
+| Occupancy entropy | 0.5154 (0.4412 to 0.5809) | 0.7746 (0.7218 to 0.8168) | 14.86 (7.09 to 22.08) |
+| Conditional identity entropy | 0.5633 (0.4877 to 0.6281) | 0.5633 (0.4877 to 0.6281) | 0.00 (-0.00 to 0.00) |
+
+The remaining endpoints explain why counting ICC increases is insufficient. Artery mass, skeleton density and fractal dimension have higher ICC but intervals indicating worse MAD. Vessel mass, vein mass and vessel density have ICC gains with uncertain MAD changes. Component count has lower MAD but an ICC contrast whose interval crosses zero. Conditional identity entropy remains numerically unchanged, consistent with retaining raw q. This pattern contains favorable, unfavorable and unresolved combinations, all under the same conditioning operation and measurement code.
+
+A/V mass ratio has an unfavorable response on both relative and absolute measures. Its ICC decreases from 0.5340 to 0.3639, a difference of −0.1701 [−0.2433, −0.0966]. MAD increases from 0.028891 to 0.041810, corresponding to a 44.72% increase. SEM increases from 0.051779 to 0.081544, and ordered-pair LoA widen from [−0.131409, 0.152847] to [−0.219349, 0.232452]. Historical residual correction, by comparison, has A/V ICC 0.5339 and MAD 0.027224. The two core interventions therefore have distinct A/V agreement profiles as well as distinct structural profiles.
+
+### 3.2. Occupancy reweighting changes aggregate A/V balance
+
+The per-image reweighting calculation reproduces the observed ratio change through the identity in Section 2.6. Preserved conditional identity does not require artery and vein mass to change proportionally. When occupancy changes place different weights on regions with different conditional compositions, the image-wide ratio changes. This relationship remains compatible with the nearly identical conditional identity entropy endpoint: that entropy averages local identity proportions, whereas the A/V ratio pools occupancy-weighted class mass.
+
+In historical test eyes, mean squared log-pair error increases by 0.02059 [0.01571, 0.02592] after full conditioning. The original-error cross term contributes 0.00367 [0.00076, 0.00678], and the added reweighting term contributes 0.01692 [0.01384, 0.02016]. Their sum accounts for the total increase. Under the alternative symmetric allocation, the artery term is 0.01933 [0.01313, 0.02611] and the vein term is 0.00126 [−0.00427, 0.00696]. The allocation identifies where the algebra assigns the change, not which anatomical or acquisition process causes it.
+
+Development results point in the same direction, with an increase of 0.01934 [0.01399, 0.02523]. This agreement between historical subsets provides internal consistency but not independent replication. Both subsets belong to the already examined image collection, and the mechanism experiment follows inspection of the core findings. The secondary scale also matters: the reported squared log-pair error cannot be substituted numerically for the original ratio MAD or interpreted as a clinical tolerance.
+
+### 3.3. Matched controls qualify the benefit of confidence weighting
+
+Across the fixed mixtures, A/V agreement changes progressively as occupancy receives more weight. ICC is approximately 0.5023, 0.4565 and 0.4078 for weights 0.25, 0.50 and 0.75, between raw at 0.5340 and full conditioning at 0.3639. Corresponding MAD estimates are 0.030069, 0.032753 and 0.036553. These point estimates describe the selected finite mixture path. They do not establish an optimal weight, and no mixture is selected from the historical test data.
+
+Table 4. A/V mass ratio ICC, MAD, SEM and ordered-pair LoA across ten readouts in the historical test subset. Mixture weights describe interpolation between raw support and independent occupancy. Confidence and budget-matched arms have equal integrated absolute support updates for each image. The follow-up source uses 5,000 resamples and remains distinct from the historical intervals in Table 3.
+
+| Readout | ICC | MAD | SEM | LoA lower | LoA upper |
+| --- | --- | --- | --- | --- | --- |
+| Raw | 0.5340 | 0.028891 | 0.051779 | -0.131409 | 0.152847 |
+| Residual corrected | 0.5339 | 0.027224 | 0.048877 | -0.117850 | 0.147209 |
+| Gaussian smoothing | 0.5340 | 0.028890 | 0.051781 | -0.131461 | 0.152828 |
+| Component cleanup | 0.5407 | 0.029940 | 0.053708 | -0.138476 | 0.157287 |
+| Mix 0.25 | 0.5023 | 0.030069 | 0.054326 | -0.140066 | 0.159097 |
+| Mix 0.50 | 0.4565 | 0.032753 | 0.059935 | -0.157133 | 0.173859 |
+| Mix 0.75 | 0.4078 | 0.036553 | 0.068610 | -0.182531 | 0.197144 |
+| Occupancy conditioned | 0.3639 | 0.041810 | 0.081544 | -0.219349 | 0.232452 |
+| Confidence gated | 0.4403 | 0.037952 | 0.071776 | -0.188534 | 0.207965 |
+| Budget matched | 0.4299 | 0.034546 | 0.063943 | -0.168954 | 0.184578 |
+
+The confidence gate improves A/V point estimates relative to full conditioning, but comparison with the equal-budget control gives a different assessment. A/V MAD is 0.037952 for the confidence gate and 0.034546 for the matched control. The gate-minus-control difference is +0.003406 [0.002552, 0.004333]. The corresponding ICC difference is +0.0105 [−0.0101, 0.0307], which does not establish a relative-reliability advantage. Structural Dice is also lower for the gate, with a difference of −0.001163 [−0.001661, −0.000628]. Consequently, reducing the magnitude of conditioning explains part of the apparent benefit relative to full conditioning, while the particular entropy-based spatial weighting does not establish an additional A/V or Dice advantage.
+
+Other endpoints prevent an undifferentiated judgment that the gate is harmful in every respect. Compared with the matched control, it reduces MAD for vessel mass, artery mass, vein mass, vessel density, skeleton density and occupancy entropy. Some of these gains accompany lower ICC. Component-count MAD increases by 0.241053 [0.068886, 0.415962]. Conditional identity entropy changes only at numerical precision. The controlled experiment therefore narrows the interpretation of the candidate gate: its spatial weighting has endpoint-dependent consequences, rather than a uniform effect attributable to calibrated confidence.
+
+### 3.4. Short residual retraining improves structure without uniform agreement gains
+
+The retraining extension evaluates all 21 checkpoints from seven configurations. Table 5 places their three-seed metric means beside raw and the historical residual checkpoint. The retrained full configuration has Dice 0.8723, compared with 0.8647 for the historical residual readout. Its paired group contrast is +0.007677 [0.004508, 0.009996]. Precision decreases by −0.014320 [−0.022104, −0.006332]. The extension therefore continues the pattern of stronger vessel recovery with lower precision. Because the legacy training recipe is incompletely recorded, this contrast describes two evaluated configurations and cannot isolate one implementation or training change as its cause.
+
+Table 5. Raw, historical residual and seven retrained configurations. Retrained values are means of metrics from three separately evaluated checkpoints, including structural Dice, precision and thin-centerline recall, and A/V agreement point estimates. These are not probability-ensemble results. All configurations are retained; no best seed is selected.
+
+| Group | Dice | Precision | Thin recall | A/V ICC | A/V MAD |
+| --- | --- | --- | --- | --- | --- |
+| Raw | 0.8556 | 0.9396 | 0.7971 | 0.5340 | 0.028891 |
+| Historical residual | 0.8647 | 0.9096 | 0.8365 | 0.5339 | 0.027224 |
+| Retrained full | 0.8723 | 0.8953 | 0.8553 | 0.4952 | 0.025770 |
+| No RGB input | 0.8729 | 0.8943 | 0.8589 | 0.4882 | 0.024914 |
+| No static logits | 0.8722 | 0.8971 | 0.8493 | 0.5100 | 0.027504 |
+| No explicit entropy | 0.8713 | 0.8981 | 0.8485 | 0.5156 | 0.027530 |
+| No Hessian input | 0.8735 | 0.8916 | 0.8615 | 0.5143 | 0.025676 |
+| One step | 0.8729 | 0.8980 | 0.8580 | 0.5053 | 0.026038 |
+| Plain convolution | 0.8714 | 0.8906 | 0.8615 | 0.4769 | 0.024816 |
+
+The full configuration is not uniformly favored by the input and architecture controls. Several input-removal configurations have structural point estimates close to or above full; for example, Dice is approximately 0.8729 without RGB and 0.8735 without Hessian input, compared with 0.8723 for full. These observations do not establish equivalence, but they fail to demonstrate that every input is necessary under this training budget. Likewise, a change caused by taking the second update with fixed weights does not prove that a separately trained one-step model must perform worse. The two experiments test different questions.
+
+In historical test repeats, full has lower ICC and higher MAD than raw for vessel mass, artery mass, vein mass, vessel density and branch density, with exploratory contrast intervals excluding zero in both unfavorable directions. For vessel mass, the ICC difference is −0.021792 [−0.034644, −0.011155] and the MAD difference is +0.000679 [0.000481, 0.000868]. For branch density, the corresponding differences are −0.080014 [−0.133378, −0.027599] and +0.000103 [0.000073, 0.000134]. Improved structural Dice therefore does not translate into uniformly better agreement for this retrained configuration.
+
+### 3.5. Relative reliability and absolute disagreement can diverge
+
+Component count provides a direct counterexample to interpreting an ICC gain alone as reduced measurement error. For full versus raw, ICC increases by +0.079346 [0.003822, 0.160005], while MAD increases by +0.390175 [0.123858, 0.684608]. Pooled within-eye standard deviation also increases, by approximately 0.7521. The full configuration has greater variation between eye means as well as greater within-eye disagreement. Its higher ICC is therefore compatible with less stable absolute component counts.
+
+For A/V mass ratio, full has MAD 0.025770 versus raw at 0.028891, but the difference of −0.003122 [−0.005608, 0.000301] crosses zero. The ICC contrast is also unresolved. The standard deviation of eye means is approximately 0.850 times raw, indicating contraction of the observed distribution. This descriptive ratio cannot distinguish removal of noise from loss of meaningful variability. Together, these examples show why the agreement panel includes dispersion diagnostics without treating either larger or smaller dispersion as inherently favorable.
+
+The supplementary HRF quality and digital-resolution experiments do not reproduce uniform benefits across the examined endpoints. They share source eyes and represent quality stress or controlled downsampling rather than independent cross-camera repeats. The complete historical, mechanism and retraining source tables preserve the unfavorable endpoints and development results. An independent residual point audit checks 5,221 quantities; it supports numerical consistency of those point calculations, while leaving bootstrap uncertainty dependent on the recorded analysis implementation.
+
+## 4. Discussion
+
+### 4.1. Readout tradeoffs under a common measurement pipeline
+
+RMDB makes a restricted design question experimentally accessible: what changes when a fixed vascular representation is read through residual correction or independent occupancy? The shared backbone and phenotype operators give the comparison a clear object. Historical residual correction recovers additional structural support with reduced precision. Occupancy conditioning has a different signature, including concordant improvements for selected repeated-image descriptors and deterioration of A/V mass ratio agreement. The useful result is this mapping from defined interventions to endpoint responses. It allows a proposed readout to be evaluated for a stated measurement purpose instead of assuming that one improvement transfers to every downstream quantity.
+
+The design also supplies an interpretable control for a common modification. A spatial confidence gate changes both the size and placement of an update. Comparison only with full conditioning combines these two effects. Matching the integrated absolute update separates the spatial weighting question from a simple reduction in intervention strength. In this experiment, the gate does not improve A/V MAD or structural Dice over the matched control, although it benefits some other absolute-agreement endpoints. This result informs the next design decision: confidence weighting requires endpoint-specific evidence, and its name alone does not justify assuming that it suppresses the relevant error.
+
+The contribution remains distinct from a new segmentation backbone or a general reliability theorem. Earlier studies examine retest behavior and device effects [3,4],<!--ref:giesser--><!--anchor:section:Abstract%20Methods%2FResults%2FConclusions--><!--ref:camera--><!--anchor:section:Discussion%20opening%20summary%3B%20About%20this%20article--> and retinalysis includes robustness assessment [2].<!--ref:retinalysis--><!--anchor:section:Abstract%20paragraphs%201%E2%80%933%3B%20submission%20history--> RMDB adds a finite intervention study around frozen probabilities, including an algebraic explanation and matched controls. It does not establish superiority over those complete systems. A matched comparison with contemporary toolboxes would need aligned inputs, preprocessing, feature definitions and evaluation cohorts, followed by analysis of both structural and agreement outcomes.
+
+### 4.2. Why the endpoints respond differently
+
+Support-sensitive structural scores reward recovering reference vessel pixels, but the same expansion can include nonvessel pixels. The residual readout's increase in recall and decrease in precision make this behavior visible. The lower vessel-density error under conditioning provides a related lesson: a scalar area summary can approach its reference even when spatial overlap or thin-centerline recovery declines. These findings do not invalidate any individual metric. They show which aspect of the output each metric constrains and why several complementary endpoints are needed for a measurement-oriented comparison.
+
+Occupancy conditioning provides a more specific explanation for A/V changes. A global ratio is a ratio of weighted sums. Preserving the local artery, vein and crossing proportions fixes the ingredients at a pixel but leaves their image-wide weights free to change. If those weights change differently between repeated views, the resulting A/V ratio can become less stable. The observed paired decomposition shows that additional reweighting differences account for increased log-ratio error in the historical test subset. It also explains why unchanged conditional identity entropy can coexist with a changed global A/V ratio, without implying a contradiction in the implementation.
+
+This interpretation stops at the output layer. Images can differ for several reasons, but the available grouping metadata do not establish acquisition timing or matched camera changes. The decomposition cannot identify which image difference gives rise to the occupancy update. Nor does its artery allocation prove that arterial anatomy is intrinsically less stable than venous anatomy. The allocation follows a chosen symmetric accounting rule, and the measured ratio includes crossing mass in both numerator and denominator. Its value is to show the mathematical route through which the implemented operation affects the endpoint.
+
+ICC and absolute-agreement measures describe another separation. ICC depends on both within-eye disagreement and between-eye variation [9].<!--ref:koo--><!--anchor:section:Abstract%2FDiscussion%20for%20Researchers%3B%20section%20How%20to%20Select%20the%20Correct%20ICC%20Form--> A change that increases population spread can raise ICC even while repeated values move farther apart in absolute units. The component-count result demonstrates that possibility within this experiment, with intervals supporting increases in both ICC and MAD. Conversely, a lower MAD accompanied by contracted eye-mean dispersion may merit further investigation rather than immediate acceptance. Dispersion alone does not reveal whether noise or relevant variation is removed. Structural references and an application-specific interpretation of absolute differences remain necessary.
+
+### 4.3. Implications for readout selection and confirmation
+
+The results support choosing a readout against an explicit endpoint and use case. For a descriptor intended to track small longitudinal changes, the magnitude of repeated-image differences is directly relevant. For a study comparing variation between individuals, relative reliability also matters. Neither objective is fully represented by binary vessel overlap. RMDB therefore retains structural fidelity, ICC, MAD, SEM and LoA as separate evidence dimensions. The tables preserve each endpoint's units and avoid a pooled performance score that would require arbitrary weights across unlike quantities.
+
+A future confirmation study can translate this approach into a decision rule only after the intended application is defined. A prospective measurement-admissibility protocol could consider both a lower confidence bound on reliability and an upper bound on disagreement relative to raw, with SEM and LoA judged against task-specific tolerances. Numerical cutoffs such as ICC 0.60 or a MAD ratio of 1.00 remain candidate analytical rules rather than validated clinical thresholds. The present historical comparisons do not produce a clinical PASS. An untouched cohort, adequate native resolution and a known repeat-acquisition design are needed to test a frozen rule without reusing the exploratory evidence that motivated it.
+
+Such a study should specify which measurement changes would alter its scientific or clinical interpretation before examining candidate readouts. It should also retain the raw comparator and repeat both structural and agreement assessments wherever suitable references are available. This would address the current separation between cohorts and allow the relation between recovery and repeatability to be examined within a common acquisition design. For cross-camera use, the images must represent actual device changes; digital downsampling can test sensitivity to reduced input detail but cannot substitute for the complete acquisition process.
+
+The retraining extension helps define what should be frozen before that test. It completes a limited set of input and update-count controls, so the unresolved issue is no longer the complete absence of residual ablations. The remaining question is whether the observed behavior persists with adequate training, more seeds, a reproducible legacy comparator and computation-aware alternatives. The current short experiment cannot establish that the U-shaped correction or every auxiliary feature is necessary. It nevertheless provides useful evidence that higher structural recovery is insufficient as the sole criterion for advancing a configuration to measurement confirmation.
+
+### 4.4. Limitations and threats to validity
+
+The strongest limitation is the exploratory use of historical data. Fundus-AVSeg and the mBRSET partitions have already been inspected, and follow-up experiments respond to earlier findings. Patient-separated mBRSET partitions prevent a patient from crossing those two partitions, but do not make the later analysis confirmatory. Confidence intervals quantify uncertainty under the specified resampling procedure; they do not account for every research choice made after inspection. All twelve endpoints remain reported without multiplicity correction, so isolated intervals should not be treated as definitive discoveries.
+
+The 224-pixel mBRSET mirror limits interpretation of small vessels and grid-derived topology. Resizing to 512 and 256 pixels standardizes operators but cannot create missing detail. The structural and repeatability cohorts are different, precluding direct estimation of a within-eye accuracy–repeatability relationship. View identifiers do not verify timing, unchanged physiology or cross-camera pairing. The findings therefore concern same-eye image agreement under available metadata, rather than established longitudinal or cross-device measurement performance. HRF quality stress and downsampling use overlapping source material and cannot be counted as independent confirmations.
+
+Development independence also has boundaries. RAV contributes to residual development, and its reconstructed image split does not establish patient independence. Full overlap with the pretrained backbone's training material is not excluded. Image duplicate screening can identify certain shared files or appearances, but it cannot certify that all underlying patients are distinct. Dataset access and licensing are heterogeneous, and a locally available image count does not establish unrestricted redistribution rights. A reproducibility package must document these dependencies and missing components instead of presenting the available files as a self-contained replacement for the original resources.
+
+The seven retrained groups use only three seeds and three epochs. Equal updates and crop schedules support a bounded comparison, but not conclusions about convergence or the best attainable performance of an architecture. Plain convolution is approximately parameter-matched, not matched for floating-point operation count, and one-step inference consumes less computation. The incomplete legacy recipe prevents attributing full-versus-legacy differences to one change. Finally, no matched full-pipeline comparison with contemporary tools, independent high-resolution repeat study or clinical tolerance validation is available. These limitations define the scope of the conclusions without erasing the controlled observations within the evaluated pipeline.
+
+## 5. Conclusion
+
+Under a frozen VascX backbone and common phenotype operators, the two parallel RMDB readouts show endpoint-dependent structural and agreement profiles across the evaluated cohorts. Residual correction changes support and identity through repeated logit updates, while occupancy conditioning changes spatial support using raw conditional identity. Under shared measurement operators, the historical residual readout improves selected structural scores with lower precision. Conditioning improves relative and absolute agreement for selected endpoints but worsens A/V mass ratio agreement. The resulting profiles establish a concrete reason to evaluate readout choices at the endpoint level.
+
+The reweighting decomposition explains how preserved local identity can coexist with altered aggregate A/V balance, and the matched-update experiment tests whether confidence weighting adds value beyond intervention size. The short residual retraining extension further shows that additional structural recovery does not guarantee better repeated-image measurements. A component-count example makes the practical distinction explicit: higher ICC can accompany larger absolute disagreement. These findings support joint structural and agreement evaluation of a frozen candidate before its use is expanded. Independent, adequately resolved repeat acquisitions and application-specific tolerances remain necessary for clinical confirmation.
+
+The present evidence supports neither one universal winner nor a general rejection of learned correction. It identifies where particular changes are useful, where they incur costs and which explanations survive a controlled comparison. The appropriate next step is a frozen, endpoint-specific confirmation study with a documented acquisition protocol and independent participants. Until then, RMDB supplies an interpretable experimental basis for readout selection and a transparent account of the uncertainty attached to that choice, while retaining the distinction between the historical residual model and the separately retrained configurations.
+
+
+## Data and code availability
+
+The study uses locally available data associated with FIVES, RAV, Fundus-AVSeg, mBRSET and HRF. Access and redistribution remain subject to the terms of the original providers. The analytical materials retain image manifests, readout definitions, source and weight hashes, per-image derived measurements, aggregate estimates and analysis scripts. This local author-review draft includes selected source images in its figures; permission for publication and redistribution must be confirmed before external release. The materials do not constitute a self-contained copy of every dataset, model and dependency. The manuscript text, analysis code and aggregate result tables are maintained at https://github.com/kobayashi0512/RMDB-1. The repository is private at this revision. Raw images, participant-level records, model weights and figures containing source images are withheld pending access and redistribution clearance; the repository is not a complete dataset archive.
+
+## Ethics statement
+
+This work is a secondary analysis of retinal image datasets and involves no new participant recruitment. Dataset access, original consent conditions and any applicable institutional requirements remain governed by the source studies and the institutions responsible for the analysis. No new ethics approval or exemption is claimed here.
+
+## Author contributions
+
+The Contributor Roles Taxonomy (CRediT) contribution statement and final author approval remain subject to confirmation by the authors.
+
+## Funding
+
+The funding declaration remains subject to author confirmation.
+
+## Conflicts of interest
+
+The declaration of competing interests remains subject to author confirmation.
+
+## Artificial intelligence assistance
+
+Artificial intelligence (AI) tools assist with manuscript organization, drafting, language editing, code generation and checks of source-linked results. AI assistance does not constitute independent scientific validation. The authors remain responsible for reviewing the analyses, citations, interpretations and final manuscript before submission.
+
+
+## References
+
+# References
+
+[1] Vargas Quiros J, Liefers B, van Garderen KA, Vermeulen JP, Klaver C. VascX Models: Deep Ensembles for Retinal Vascular Analysis From Color Fundus Images. Translational Vision Science & Technology. 2025;14(7):19. doi:10.1167/tvst.14.7.19.
+
+[2] Vargas Quiros JD, Beyeler MJ, Ortin Vela S, EyeNED Reading Center, Bergmann S, Klaver CCW, et.al. retinalysis-vascx: An explainable software toolbox for the extraction of retinal vascular biomarkers. arXiv:2602.08580v4 [preprint]. 2026. Revised August 31, 2026. doi:10.48550/arXiv.2602.08580. Version-specific URL: https://arxiv.org/abs/2602.08580v4.
+
+[3] Giesser SD, Turgut F, Saad A, Zoellin JR, Sommer C, Zhou Y, et.al. Evaluating the Impact of Retinal Vessel Segmentation Metrics on Retest Reliability in a Clinical Setting: A Comparative Analysis Using AutoMorph. Investigative Ophthalmology & Visual Science. 2024;65(13):24. doi:10.1167/iovs.65.13.24.
+
+[4] Cunnac P, Boussat B, Hogg S, Geiser M, MacGillivray T, Trucco E, et.al. Effect of using different fundus cameras and image resolutions on automatic measurements of retinal vascular parameters. Scientific Reports. 2026;16:14366. doi:10.1038/s41598-026-44196-y.
+
+[5] Jin K, Huang X, Zhou J, Li Y, Yan Y, Sun Y, et.al. FIVES: A Fundus Image Dataset for Artificial Intelligence based Vessel Segmentation. Scientific Data. 2022;9:475. doi:10.1038/s41597-022-01564-3.
+
+[6] Vargas Quiros J. Rotterdam Artery-Vein Segmentation Dataset - RAV [dataset]. DataverseNL. 2025. Version 3.0. doi:10.34894/9OIMWY.
+
+[7] Deng Z, Gao W, Gong Z, Gan R, Chen L, Zhang S, et.al. A Fundus Image Dataset for AI-based Artery-Vein Vessel Segmentation. Scientific Data. 2025;12:1298. doi:10.1038/s41597-025-05381-2.
+
+[8] Wu C, Restrepo D, Nakayama LF, Ribeiro LZ, Shuai Z, Barboza NS, et.al. A portable retina fundus photos dataset for clinical, demographic, and diabetic retinopathy prediction. Scientific Data. 2025;12:323. doi:10.1038/s41597-025-04627-3.
+
+[9] Koo TK, Li MY. A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research. Journal of Chiropractic Medicine. 2016;15(2):155–163. doi:10.1016/j.jcm.2016.02.012. Erratum: 2017;16(4):346. doi:10.1016/j.jcm.2017.10.001.
+
+[10] Bland JM, Altman DG. Statistical methods for assessing agreement between two methods of clinical measurement. The Lancet. 1986;327(8476):307–310. doi:10.1016/S0140-6736(86)90837-8.
+
+[11] Shit S, Paetzold JC, Sekuboyina A, Ezhov I, Unger A, Zhylka A, et.al. clDice - A Novel Topology-Preserving Loss Function for Tubular Structure Segmentation. In: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2021:16555–16564. doi:10.1109/CVPR46437.2021.01629.

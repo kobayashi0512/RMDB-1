@@ -1,0 +1,5 @@
+# Render QA — 2026-09-15
+
+The main agent visually inspected all 16 rendered pages, including tables, references and editable equations. The release render has identical PNG hashes to the inspected preceding render on pages 1–6 and 8–16. Page 7 was separately re-inspected after replacing the converter-broken square-root notation with the mathematically equivalent W^(1/2). No visible clipping, overlapping text or unresolved equation placeholders remained in this render. Multipage Table 3 repeats its header.
+
+Verification used the bundled headless LibreOffice renderer, not desktop Microsoft Word. Differences in other word processors remain possible. This is a complete prose-and-table initial draft, not a figure-complete submission package. PPT figures were not revised or inserted in this turn. Author declarations, access/ethics details and venue-specific requirements remain pending. Exact shared academic-pipeline contract files were unavailable; these bounded checks are not full submission certification.

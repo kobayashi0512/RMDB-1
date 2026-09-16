@@ -1,0 +1,23 @@
+{
+  "protocol": "RMDB-BiRAP V2 outcome-blind development",
+  "date": "2026-08-24",
+  "development_datasets": {
+    "FIVES": "vessel occupancy supervision; official test unused",
+    "RAV": "harmonised vessel and A/V identity supervision; analogue camera excluded from selection"
+  },
+  "forbidden_for_selection": [
+    "Fundus-AVSeg images and labels",
+    "China Fundus-CIMT validation and test",
+    "mBRSET clinical outcomes"
+  ],
+  "ablation_order": [
+    "high-resolution occupancy",
+    "conditional identity and VascX bypass",
+    "direction and centreline topology",
+    "mass, ratio, and calibration alignment",
+    "fixed uncertainty quality routing"
+  ],
+  "selection_rule": "RAV development A/V Dice + 0.25 FIVES development vessel Dice - 0.10 RAV development A/V ratio error",
+  "external_confirmation": "A newly untouched A/V-labelled cohort is required after V2 is frozen",
+  "claim_boundary": "Any rerun on Fundus-AVSeg is post hoc reevaluation, not a second locked external validation"
+}

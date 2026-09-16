@@ -1,0 +1,103 @@
+datasets:
+  china_fundus_cimt:
+    local_path: ../../data/China-Fundus-CIMT
+    status: ready
+    role: primary_cross_organ_outcome
+    patients: 2903
+    images: 5806
+    labels: [cimt_mm, cimt_thickened, age, sex]
+    split_policy: patient_level_fixed_split
+    source: https://springernature.figshare.com/articles/dataset/27907056
+    license: CC0
+
+  fives:
+    local_path: ../../data/FIVES
+    status: ready
+    role: binary_vessel_measurement
+    train_images: 600
+    test_images: 200
+    labels: [vessel_mask]
+    source: https://figshare.com/articles/dataset/FIVES_A_Fundus_Image_Dataset_for_Vessel_Segmentation/19688169
+
+  fundus_dg_odoc:
+    local_path: ../../data/external/fundus_dg_odoc
+    status: downloading
+    role: open_optic_disc_cup_measurement_calibration
+    images: 1391
+    labels: [optic_disc, optic_cup]
+    source: https://doi.org/10.5281/zenodo.8009107
+    license: CC-BY-4.0
+    provenance: Derived cross-domain release based on REFUGE, Drishti-GS, ORIGA and RIGA.
+
+  rite:
+    local_path: ../../data/external/RITE
+    status: access_request_required
+    role: artery_vein_measurement_calibration
+    images: 40
+    labels: [vessel_mask, artery, vein, crossing, uncertain]
+    source: https://eye.medicine.uiowa.edu/rite-dataset
+    access_note: Official download request required; do not use unverified mirrors.
+
+  fundus_avseg:
+    local_path: ../../data/external/Fundus-AVSeg
+    status: preferred_open_alternative_not_downloaded
+    role: artery_vein_measurement_training_and_external_test
+    images: 100
+    labels: [artery, vein, crossing, uncertain, image_quality]
+    source: https://doi.org/10.6084/m9.figshare.27938034.v2
+    license: CC-BY-4.0
+    note: Preferred over RITE because it is larger, multi-device and includes image-quality labels.
+
+  les_av:
+    local_path: ../../data/external/LES-AV
+    status: open_secondary_alternative_not_downloaded
+    role: artery_vein_external_test
+    images: 22
+    labels: [artery, vein, crossing, uncertain]
+    source: https://doi.org/10.6084/m9.figshare.11857698.v1
+    license: GPL-3.0
+    note: Small independent test set; do not mix with Fundus-AVSeg test images.
+
+  refuge:
+    local_path: ../../data/external/REFUGE
+    status: account_authorization_required
+    role: optic_disc_cup_measurement_calibration
+    images_total: 1200
+    images_with_training_labels: 400
+    labels: [optic_disc, optic_cup, fovea]
+    source: https://refuge.grand-challenge.org/Details/
+    access_note: Grand Challenge account and challenge authorization required.
+
+  external_cimt:
+    local_path: ../../data/external/external_cimt
+    status: not_acquired
+    role: locked_external_validation
+    required_labels: [patient_id, left_fundus, right_fundus, cimt_mm, age, sex]
+    recommended_labels: [carotid_plaque, systolic_bp, diabetes, smoking, lipids]
+    target_patients: 500-1000
+
+  uk_biobank_cimt:
+    local_path: ../../data/external/uk_biobank_cimt
+    status: formal_application_required
+    role: external_retinal_cimt_validation_and_system_extension
+    required_fields: [bilateral_fundus, carotid_ultrasound_cimt, age, sex]
+    recommended_fields: [blood_pressure, lipids, diabetes, smoking, incident_cvd]
+    source: https://www.ukbiobank.ac.uk/projects/multimodal-cardiovascular-risk-prediction-using-retinal-imaging-and-carotid-intima-media-thickness/
+    access_note: Exact matched modality alternative; use only after approved UK Biobank application.
+
+  cfp_octa_pilot:
+    local_path: ../../data/external/cfp_octa_pilot
+    status: not_acquired
+    role: biological_anchor_validation
+    required_labels: [patient_id, bilateral_cfp, octa_vessel_density]
+    recommended_labels: [cimt_mm, octa_perfusion_density, faz_area]
+    target_patients: 100-200
+
+  octa_500:
+    local_path: ../../data/external/OCTA-500
+    status: optional_open_access_request
+    role: octa_vascular_representation_pretraining_only
+    subjects: 500
+    labels: [oct, octa, artery, vein, capillary, faz]
+    source: https://ieee-dataport.org/open-access/octa-500
+    note: Does not replace a same-person CFP+OCTA+CIMT biological anchor.

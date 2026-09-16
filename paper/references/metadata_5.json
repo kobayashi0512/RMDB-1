@@ -1,0 +1,666 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          15
+        ]
+      ],
+      "date-time": "2026-09-15T02:25:48Z",
+      "timestamp": 1789439148681,
+      "version": "build-2803163510"
+    },
+    "reference-count": 29,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              4
+            ]
+          ],
+          "date-time": "2022-08-04T00:00:00Z",
+          "timestamp": 1659571200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              4
+            ]
+          ],
+          "date-time": "2022-08-04T00:00:00Z",
+          "timestamp": 1659571200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Data"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Retinal vasculature provides an opportunity for direct observation of vessel morphology, which is linked to multiple clinical conditions. However, objective and quantitative interpretation of the retinal vasculature relies on precise vessel segmentation, which is time consuming and labor intensive. Artificial intelligence (AI) has demonstrated great promise in retinal vessel segmentation. The development and evaluation of AI-based models require large numbers of annotated retinal images. However, the public datasets that are usable for this task are scarce. In this paper, we collected a color fundus image vessel segmentation (FIVES) dataset. The FIVES dataset consists of 800 high-resolution multi-disease color fundus photographs with pixelwise manual annotation. The annotation process was standardized through crowdsourcing among medical experts. The quality of each image was also evaluated. To the best of our knowledge, this is the largest retinal vessel segmentation dataset for which we believe this work will be beneficial to the further development of retinal vessel segmentation.</jats:p>",
+    "DOI": "10.1038/s41597-022-01564-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2022-08-04T09:09:51Z",
+      "timestamp": 1659604191000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 222,
+    "title": [
+      "FIVES: A Fundus Image Dataset for Artificial Intelligence based Vessel Segmentation"
+    ],
+    "prefix": "10.1038",
+    "volume": "9",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4369-2417",
+        "authenticated-orcid": false,
+        "given": "Kai",
+        "family": "Jin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xingru",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jingxing",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yunxiang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yan",
+        "family": "Yan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yibao",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qianni",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yaqi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juan",
+        "family": "Ye",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1564_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "100759",
+        "DOI": "10.1016/j.preteyeres.2019.04.003",
+        "volume": "72",
+        "author": "D Ting",
+        "year": "2019",
+        "unstructured": "Ting, D. et al. Deep learning in ophthalmology: The technical and clinical considerations. Progress in Retinal and Eye Research 72, 100759, https://doi.org/10.1016/j.preteyeres.2019.04.003 (2019).",
+        "journal-title": "Progress in Retinal and Eye Research"
+      },
+      {
+        "key": "1564_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "77",
+        "DOI": "10.1016/j.ophtha.2012.07.063",
+        "volume": "120",
+        "author": "R Wu",
+        "year": "2013",
+        "unstructured": "Wu, R. et al. Retinal vascular geometry and glaucoma: The singapore malay eye study. Ophthalmology 120, 77–83, https://doi.org/10.1016/j.ophtha.2012.07.063 (2013).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "1564_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1770",
+        "DOI": "10.1007/s00125-017-4333-0",
+        "volume": "60",
+        "author": "CY Cheung",
+        "year": "2017",
+        "unstructured": "Cheung, C. Y. et al. Retinal vascular geometry and 6 year incidence and progression of diabetic retinopathy. Diabetologia 60, 1770–1781, https://doi.org/10.1007/s00125-017-4333-0 (2017).",
+        "journal-title": "Diabetologia"
+      },
+      {
+        "key": "1564_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "53",
+        "DOI": "10.1016/j.preteyeres.2014.02.001",
+        "volume": "40",
+        "author": "DY Yu",
+        "year": "2014",
+        "unstructured": "Yu, D. Y., Yu, P. K., Cringle, S. J., Kang, M. H. & Su, E. N. Functional and morphological characteristics of the retinal and choroidal vasculature. Progress in Retinal and Eye Research 40, 53–93, https://doi.org/10.1016/j.preteyeres.2014.02.001 (2014).",
+        "journal-title": "Progress in Retinal and Eye Research"
+      },
+      {
+        "key": "1564_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1270",
+        "DOI": "10.1093/eurheartj/eht023",
+        "volume": "34",
+        "author": "J Flammer",
+        "year": "2013",
+        "unstructured": "Flammer, J. et al. The eye and the heart. European Heart Journal 34, 1270–8, https://doi.org/10.1093/eurheartj/eht023 (2013).",
+        "journal-title": "European Heart Journal"
+      },
+      {
+        "key": "1564_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "100938",
+        "DOI": "10.1016/j.preteyeres.2020.100938",
+        "volume": "83",
+        "author": "A Kashani",
+        "year": "2021",
+        "unstructured": "Kashani, A. et al. Past, present and future role of retinal imaging in neurodegenerative disease. Progress in Retinal and Eye Research 83, 100938, https://doi.org/10.1016/j.preteyeres.2020.100938 (2021).",
+        "journal-title": "Progress in Retinal and Eye Research"
+      },
+      {
+        "key": "1564_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1383",
+        "DOI": "10.1161/hypertensionaha.119.13752",
+        "volume": "74",
+        "author": "R Tapp",
+        "year": "2019",
+        "unstructured": "Tapp, R. et al. Associations of retinal microvascular diameters and tortuosity with blood pressure and arterial stiffness: United kingdom biobank. Hypertension 74, 1383–1390, https://doi.org/10.1161/hypertensionaha.119.13752 (2019).",
+        "journal-title": "Hypertension"
+      },
+      {
+        "key": "1564_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "96",
+        "DOI": "10.1016/j.ophtha.2018.07.022",
+        "volume": "126",
+        "author": "C Owen",
+        "year": "2019",
+        "unstructured": "Owen, C. et al. Retinal vasculometry associations with cardiometabolic risk factors in the european prospective investigation of cancer-norfolk study. Ophthalmology 126, 96–106, https://doi.org/10.1016/j.ophtha.2018.07.022 (2019).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "1564_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1638",
+        "DOI": "10.1007/s00125-010-1763-3",
+        "volume": "53",
+        "author": "R Klein",
+        "year": "2010",
+        "unstructured": "Klein, R. et al. The relationship of retinal vessel diameter to changes in diabetic nephropathy structural variables in patients with type 1 diabetes. Diabetologia 53, 1638–1646, https://doi.org/10.1007/s00125-010-1763-3 (2010).",
+        "journal-title": "Diabetologia"
+      },
+      {
+        "key": "1564_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "498",
+        "DOI": "10.1038/s41551-020-00626-4",
+        "volume": "5",
+        "author": "C Cheung",
+        "year": "2021",
+        "unstructured": "Cheung, C. et al. A deep-learning system for the assessment of cardiovascular disease risk via the measurement of retinal-vessel calibre. Nature Biomedical Engineering 5, 498–508, https://doi.org/10.1038/s41551-020-00626-4 (2021).",
+        "journal-title": "Nature Biomedical Engineering"
+      },
+      {
+        "key": "1564_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "407",
+        "DOI": "10.1016/j.cmpb.2012.03.009",
+        "volume": "108",
+        "author": "MM Fraz",
+        "year": "2012",
+        "unstructured": "Fraz, M. M. et al. Blood vessel segmentation methodologies in retinal images - a survey. Computer Methods and Programs in Biomedicine 108, 407–433, https://doi.org/10.1016/j.cmpb.2012.03.009 (2012).",
+        "journal-title": "Computer Methods and Programs in Biomedicine"
+      },
+      {
+        "key": "1564_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "101905",
+        "DOI": "10.1016/j.media.2020.101905",
+        "volume": "68",
+        "author": "MRK Mookiah",
+        "year": "2021",
+        "unstructured": "Mookiah, M. R. K. et al. A review of machine learning methods for retinal blood vessel segmentation and artery/vein classification. Med Image Anal 68, 101905, https://doi.org/10.1016/j.media.2020.101905 (2021).",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "key": "1564_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "203",
+        "DOI": "10.1109/42.845178",
+        "volume": "19",
+        "author": "A Hoover",
+        "year": "2000",
+        "unstructured": "Hoover, A., Kouznetsova, V. & Goldbaum, M. Locating blood vessels in retinal images by piecewise threshold probing of a matched filter response. IEEE Transactions on Medical Imaging 19, 203–210, https://doi.org/10.1109/42.845178 (2000).",
+        "journal-title": "IEEE Transactions on Medical Imaging"
+      },
+      {
+        "key": "1564_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "501",
+        "DOI": "10.1109/tmi.2004.825627",
+        "volume": "23",
+        "author": "J Staal",
+        "year": "2004",
+        "unstructured": "Staal, J., Abràmoff, M., Niemeijer, M., Viergever, M. & van Ginneken, B. Ridge-based vessel segmentation in color images of the retina. IEEE Transactions on Medical Imaging 23, 501–509, https://doi.org/10.1109/tmi.2004.825627 (2004).",
+        "journal-title": "IEEE Transactions on Medical Imaging"
+      },
+      {
+        "key": "1564_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "748",
+        "DOI": "10.1016/j.jfranklin.2008.04.009",
+        "volume": "345",
+        "author": "D Farnell",
+        "year": "2008",
+        "unstructured": "Farnell, D. et al. Enhancement of blood vessels in digital fundus photographs via the application of multiscale line operators. Journal of the Franklin Institute - Engineering and Applied Mathematics 345, 748–765, https://doi.org/10.1016/j.jfranklin.2008.04.009 (2008).",
+        "journal-title": "Journal of the Franklin Institute - Engineering and Applied Mathematics"
+      },
+      {
+        "key": "1564_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "2262",
+        "DOI": "10.1109/iembs.2008.4649647",
+        "volume": "2008",
+        "author": "B Al-Diri",
+        "year": "2008",
+        "unstructured": "Al-Diri, B. et al. Review - a reference data set for retinal vessel profiles. Annual International Conference of the IEEE Engineering in Medicine and Biology Society 2008, 2262–2265, https://doi.org/10.1109/iembs.2008.4649647 (2008).",
+        "journal-title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society"
+      },
+      {
+        "key": "1564_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "2004",
+        "DOI": "10.1167/iovs.08-3018",
+        "volume": "50",
+        "author": "C Owen",
+        "year": "2009",
+        "unstructured": "Owen, C. et al. Measuring retinal vessel tortuosity in 10-year-old children: Validation of the computer-assisted image analysis of the retina (caiar) program. Investigative Ophthalmology & Visual Science 50, 2004–2010, https://doi.org/10.1167/iovs.08-3018 (2009).",
+        "journal-title": "Investigative Ophthalmology & Visual Science"
+      },
+      {
+        "key": "1564_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "154860",
+        "DOI": "10.1155/2013/154860",
+        "volume": "2013",
+        "author": "A Budai",
+        "year": "2013",
+        "unstructured": "Budai, A., Bock, R., Maier, A., Hornegger, J. & Michelson, G. Robust vessel segmentation in fundus images. International Journal of Biomedical Imaging 2013, 154860, https://doi.org/10.1155/2013/154860 (2013).",
+        "journal-title": "International Journal of Biomedical Imaging"
+      },
+      {
+        "key": "1564_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "102025",
+        "DOI": "10.1016/j.media.2021.102025",
+        "volume": "70",
+        "author": "H Wu",
+        "year": "2021",
+        "unstructured": "Wu, H. et al. Scs-net: A scale and context sensitive network for retinal vessel segmentation. Med Image Anal 70, 102025, https://doi.org/10.1016/j.media.2021.102025 (2021).",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "key": "1564_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "153",
+        "DOI": "10.1016/j.neunet.2020.02.018",
+        "volume": "126",
+        "author": "Y Wu",
+        "year": "2020",
+        "unstructured": "Wu, Y., Xia, Y., Song, Y., Zhang, Y. & Cai, W. Nfn: A novel network followed network for retinal vessel segmentation. Neural Netw 126, 153–162, https://doi.org/10.1016/j.neunet.2020.02.018 (2020).",
+        "journal-title": "Neural Netw"
+      },
+      {
+        "key": "1564_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "2552",
+        "DOI": "10.1109/TIP.2019.2946078",
+        "volume": "29",
+        "author": "V Cherukuri",
+        "year": "2019",
+        "unstructured": "Cherukuri, V., G, V. K. B., Bala, R. & Monga, V. Deep retinal image segmentation with regularization under geometric priors. IEEE Transactions on Image Processing 29, 2552–2567, https://doi.org/10.1109/TIP.2019.2946078 (2019).",
+        "journal-title": "IEEE Transactions on Image Processing"
+      },
+      {
+        "key": "1564_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "101636",
+        "DOI": "10.1016/j.compmedimag.2019.05.004",
+        "volume": "76",
+        "author": "R Hemelings",
+        "year": "2019",
+        "unstructured": "Hemelings, R. et al. Artery-vein segmentation in fundus images using a fully convolutional network. Computerized Medical Imaging and Graphics 76, 101636, https://doi.org/10.1016/j.compmedimag.2019.05.004 (2019).",
+        "journal-title": "Computerized Medical Imaging and Graphics"
+      },
+      {
+        "key": "1564_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "105969",
+        "DOI": "10.1016/j.cmpb.2021.105969",
+        "volume": "202",
+        "author": "M Mookiah",
+        "year": "2021",
+        "unstructured": "Mookiah, M., Hogg, S., Macgillivray, T. & Trucco, E. On the quantitative effects of compression of retinal fundus images on morphometric vascular measurements in vampire. Computer Methods and Programs in Biomedicine 202, 105969, https://doi.org/10.1016/j.cmpb.2021.105969 (2021).",
+        "journal-title": "Computer Methods and Programs in Biomedicine"
+      },
+      {
+        "key": "1564_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "S15",
+        "DOI": "10.2337/dc21-S002",
+        "volume": "44",
+        "author": "American Diabetes Association",
+        "year": "2021",
+        "unstructured": "American Diabetes Association. 2. Classification and diagnosis of diabetes: Standards of medical care in diabetes-2021. Diabetes Care 44, S15–s33, https://doi.org/10.2337/dc21-S002 (2021).",
+        "journal-title": "Diabetes Care"
+      },
+      {
+        "key": "1564_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "P1",
+        "DOI": "10.1016/j.ophtha.2019.09.024",
+        "volume": "127",
+        "author": "C Flaxel",
+        "year": "2020",
+        "unstructured": "Flaxel, C. et al. Age-related macular degeneration preferred practice pattern®. Ophthalmology 127, P1–P65, https://doi.org/10.1016/j.ophtha.2019.09.024 (2020).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "1564_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "P41",
+        "DOI": "10.1016/j.ophtha.2015.10.053",
+        "volume": "123",
+        "author": "B Prum",
+        "year": "2016",
+        "unstructured": "Prum, B. et al. Primary open-angle glaucoma preferred practice pattern(®) guidelines. Ophthalmology 123, P41–P111, https://doi.org/10.1016/j.ophtha.2015.10.053 (2016).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "1564_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "P1",
+        "DOI": "10.1016/j.ophtha.2015.10.049",
+        "volume": "123",
+        "author": "BE Prum Jr.",
+        "year": "2016",
+        "unstructured": "Prum, B. E. Jr. et al. Primary angle closure preferred practice pattern(®) guidelines. Ophthalmology 123, P1–p40, https://doi.org/10.1016/j.ophtha.2015.10.049 (2016).",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "1564_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1046",
+        "DOI": "10.1109/TMI.2015.2506902",
+        "volume": "35",
+        "author": "S Wang",
+        "year": "2016",
+        "unstructured": "Wang, S. et al. Human visual system-based fundus image quality assessment of portable fundus camera photographs. IEEE Transactions on Medical Imaging 35, 1046–1055, https://doi.org/10.1109/TMI.2015.2506902 (2016).",
+        "journal-title": "IEEE Transactions on Medical Imaging"
+      },
+      {
+        "key": "1564_CR29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.6084/m9.figshare.19688169.v1",
+        "author": "K Jin",
+        "year": "2022",
+        "unstructured": "Jin, K. et al. Fives: A fundus image dataset for artificial Intelligence based vessel segmentation, Figshare, https://doi.org/10.6084/m9.figshare.19688169.v1 (2022)."
+      }
+    ],
+    "container-title": [
+      "Scientific Data"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41597-022-01564-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-022-01564-3",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-022-01564-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          24
+        ]
+      ],
+      "date-time": "2022-11-24T15:04:02Z",
+      "timestamp": 1669302242000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41597-022-01564-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          4
+        ]
+      ]
+    },
+    "references-count": 29,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1564"
+    ],
+    "URL": "https://doi.org/10.1038/s41597-022-01564-3",
+    "relation": {
+      "references": [
+        {
+          "id-type": "doi",
+          "id": "10.6084/m9.figshare.19688169.v1",
+          "asserted-by": "subject"
+        }
+      ]
+    },
+    "ISSN": [
+      "2052-4463"
+    ],
+    "issn-type": [
+      {
+        "value": "2052-4463",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "16 December 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "12 July 2022",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "4 August 2022",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "475"
+  }
+}

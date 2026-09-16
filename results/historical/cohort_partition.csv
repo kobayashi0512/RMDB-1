@@ -1,0 +1,3 @@
+split,partition_images,partition_patients,partition_eyes,repeat_patients,repeat_eyes,repeat_images,excluded_single_eyes
+development,978,257,505,253,472,945,33
+test,982,258,507,255,475,950,32

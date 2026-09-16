@@ -1,0 +1,529 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T21:49:11Z",
+      "timestamp": 1787003351028,
+      "version": "build-2736575974"
+    },
+    "reference-count": 22,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              25
+            ]
+          ],
+          "date-time": "2025-07-25T00:00:00Z",
+          "timestamp": 1753401600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              25
+            ]
+          ],
+          "date-time": "2025-07-25T00:00:00Z",
+          "timestamp": 1753401600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Data"
+    ],
+    "DOI": "10.1038/s41597-025-05381-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2025-07-25T10:49:52Z",
+      "timestamp": 1753440592000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "A Fundus Image Dataset for AI-based Artery-Vein Vessel Segmentation"
+    ],
+    "prefix": "10.1038",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Zhuo",
+        "family": "Deng",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Weihao",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6220-3984",
+        "authenticated-orcid": false,
+        "given": "Zheng",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Run",
+        "family": "Gan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lu",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shaochong",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lan",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "5381_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1107",
+        "DOI": "10.1016/j.amjcard.2005.05.070",
+        "volume": "96",
+        "author": "E Tedeschi-Reiner",
+        "year": "2005",
+        "unstructured": "Tedeschi-Reiner, E., Strozzi, M., Skoric, B. & Reiner, Z. Relation of atherosclerotic changes in retinal arteries to the extent of coronary artery disease. The American journal of cardiology 96, 1107–1109 (2005).",
+        "journal-title": "The American journal of cardiology"
+      },
+      {
+        "key": "5381_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2341",
+        "DOI": "10.1167/iovs.05-1539",
+        "volume": "47",
+        "author": "TY Wong",
+        "year": "2006",
+        "unstructured": "Wong, T. Y. et al. Retinal vascular caliber, cardiovascular risk factors, and inflammation: the multi-ethnic study of atherosclerosis (mesa). Investigative ophthalmology & visual science 47, 2341–2350 (2006).",
+        "journal-title": "Investigative ophthalmology & visual science"
+      },
+      {
+        "key": "5381_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "2409",
+        "DOI": "10.1007/s00125-011-2200-y",
+        "volume": "54",
+        "author": "M Sasongko",
+        "year": "2011",
+        "unstructured": "Sasongko, M. et al. Retinal vascular tortuosity in persons with diabetes and diabetic retinopathy. Diabetologia 54, 2409–2416 (2011).",
+        "journal-title": "Diabetologia"
+      },
+      {
+        "key": "5381_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "2166",
+        "DOI": "10.1167/iovs.16-19060",
+        "volume": "57",
+        "author": "E Pekel",
+        "year": "2016",
+        "unstructured": "Pekel, E. & Pekel, G. Diagnostic ability of retinal arteriolar diameter measurements in glaucoma. Investigative Ophthalmology & Visual Science 57, 2166–2166 (2016).",
+        "journal-title": "Investigative Ophthalmology & Visual Science"
+      },
+      {
+        "key": "5381_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "207",
+        "DOI": "10.1097/HJH.0b013e32836586f4",
+        "volume": "32",
+        "author": "J Ding",
+        "year": "2014",
+        "unstructured": "Ding, J. et al. Retinal vascular caliber and the development of hypertension: a meta-analysis of individual participant data. Journal of hypertension 32, 207–215 (2014).",
+        "journal-title": "Journal of hypertension"
+      },
+      {
+        "key": "5381_CR6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hu, Q., Abràmoff, M. D. & Garvin, M. K. Automated separation of binary overlapping trees in low-contrast color retinal images. In Medical Image Computing and Computer-Assisted Intervention–MICCAI 2013: 16th International Conference, Nagoya, Japan, September 22-26, 2013, Proceedings, Part II 16, 436–443 (Springer, 2013).",
+        "DOI": "10.1007/978-3-642-40763-5_54"
+      },
+      {
+        "key": "5381_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "101636",
+        "DOI": "10.1016/j.compmedimag.2019.05.004",
+        "volume": "76",
+        "author": "R Hemelings",
+        "year": "2019",
+        "unstructured": "Hemelings, R. et al. Artery–vein segmentation in fundus images using a fully convolutional network. Computerized Medical Imaging and Graphics 76, 101636 (2019).",
+        "journal-title": "Computerized Medical Imaging and Graphics"
+      },
+      {
+        "key": "5381_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "2518",
+        "DOI": "10.1109/TMI.2015.2443117",
+        "volume": "34",
+        "author": "R Estrada",
+        "year": "2015",
+        "unstructured": "Estrada, R. et al. Retinal artery-vein classification via topology estimation. IEEE transactions on medical imaging 34, 2518–2534 (2015).",
+        "journal-title": "IEEE transactions on medical imaging"
+      },
+      {
+        "key": "5381_CR9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Orlando, J. I. et al. Towards a glaucoma risk index based on simulated hemodynamics from fundus images. In Medical Image Computing and Computer Assisted Intervention–MICCAI 2018: 21st International Conference, Granada, Spain, September 16-20, 2018, Proceedings, Part II 11, 65–73 (Springer, 2018).",
+        "DOI": "10.1007/978-3-030-00934-2_8"
+      },
+      {
+        "key": "5381_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "102116",
+        "DOI": "10.1016/j.artmed.2021.102116",
+        "volume": "118",
+        "author": "J Morano",
+        "year": "2021",
+        "unstructured": "Morano, J., Hervella, Á. S., Novo, J. & Rouco, J. Simultaneous segmentation and classification of the retinal arteries and veins from color fundus images. Artificial Intelligence in Medicine 118, 102116 (2021).",
+        "journal-title": "Artificial Intelligence in Medicine"
+      },
+      {
+        "key": "5381_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "106650",
+        "DOI": "10.1016/j.cmpb.2022.106650",
+        "volume": "216",
+        "author": "RA Karlsson",
+        "year": "2022",
+        "unstructured": "Karlsson, R. A. & Hardarson, S. H. Artery vein classification in fundus images using serially connected u-nets. Computer Methods and Programs in Biomedicine 216, 106650 (2022).",
+        "journal-title": "Computer Methods and Programs in Biomedicine"
+      },
+      {
+        "key": "5381_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "3896",
+        "DOI": "10.1109/JBHI.2022.3165867",
+        "volume": "26",
+        "author": "J Hu",
+        "year": "2022",
+        "unstructured": "Hu, J. et al. Multi-scale interactive network with artery/vein discriminator for retinal vessel classification. IEEE Journal of Biomedical and Health Informatics 26, 3896–3905 (2022).",
+        "journal-title": "IEEE Journal of Biomedical and Health Informatics"
+      },
+      {
+        "key": "5381_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "501",
+        "DOI": "10.1109/TMI.2004.825627",
+        "volume": "23",
+        "author": "J Staal",
+        "year": "2004",
+        "unstructured": "Staal, J., Abràmoff, M. D., Niemeijer, M., Viergever, M. A. & Van Ginneken, B. Ridge-based vessel segmentation in color images of the retina. IEEE transactions on medical imaging 23, 501–509 (2004).",
+        "journal-title": "IEEE transactions on medical imaging"
+      },
+      {
+        "key": "5381_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "154860",
+        "DOI": "10.1155/2013/154860",
+        "volume": "2013",
+        "author": "A Budai",
+        "year": "2013",
+        "unstructured": "Budai, A., Bock, R., Maier, A., Hornegger, J. & Michelson, G. Robust vessel segmentation in fundus images. International journal of biomedical imaging 2013, 154860 (2013).",
+        "journal-title": "International journal of biomedical imaging"
+      },
+      {
+        "key": "5381_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deng, Z. Fundus-avseg: A fundus image dataset for ai-based artery-vein vessel segmentation. Figshare https://figshare.com/articles/dataset/Fundus-AVSeg/27938034 (2024).",
+        "DOI": "10.1038/s41597-025-05381-2"
+      },
+      {
+        "key": "5381_CR16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ronneberger, O., Fischer, P. & Brox, T. U-net: Convolutional networks for biomedical image segmentation. In Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18, 234–241 (Springer, 2015).",
+        "DOI": "10.1007/978-3-319-24574-4_28"
+      },
+      {
+        "key": "5381_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "1856",
+        "DOI": "10.1109/TMI.2019.2959609",
+        "volume": "39",
+        "author": "Z Zhou",
+        "year": "2019",
+        "unstructured": "Zhou, Z., Siddiquee, M. M. R., Tajbakhsh, N. & Liang, J. Unet++: Redesigning skip connections to exploit multiscale features in image segmentation. IEEE transactions on medical imaging 39, 1856–1867 (2019).",
+        "journal-title": "IEEE transactions on medical imaging"
+      },
+      {
+        "key": "5381_CR18",
+        "unstructured": "Oktay, O. et al. Attention u-net: Learning where to look for the pancreas. arXiv preprint arXiv:1804.03999 (2018)."
+      },
+      {
+        "key": "5381_CR19",
+        "first-page": "1",
+        "volume": "PP",
+        "author": "Z Zhang",
+        "year": "2017",
+        "unstructured": "Zhang, Z., Liu, Q. & Wang, Y. Road extraction by deep residual u-net. IEEE Geoscience and Remote Sensing Letters PP, 1–5 (2017).",
+        "journal-title": "IEEE Geoscience and Remote Sensing Letters"
+      },
+      {
+        "key": "5381_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1941",
+        "DOI": "10.1109/TMI.2011.2159619",
+        "volume": "30",
+        "author": "M Niemeijer",
+        "year": "2011",
+        "unstructured": "Niemeijer, M. et al. Automated measurement of the arteriolar-to-venular width ratio in digital color fundus photographs. IEEE Transactions on medical imaging 30, 1941–1950 (2011).",
+        "journal-title": "IEEE Transactions on medical imaging"
+      },
+      {
+        "key": "5381_CR21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41597-022-01507-y",
+        "volume": "9",
+        "author": "X Lyu",
+        "year": "2022",
+        "unstructured": "Lyu, X., Cheng, L. & Zhang, S. The reta benchmark for retinal vascular tree analysis. Scientific Data 9, 397 (2022).",
+        "journal-title": "Scientific Data"
+      },
+      {
+        "key": "5381_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "25",
+        "DOI": "10.3390/data3030025",
+        "volume": "3",
+        "author": "P Porwal",
+        "year": "2018",
+        "unstructured": "Porwal, P. et al. Indian diabetic retinopathy image dataset (idrid): a database for diabetic retinopathy screening research. Data 3, 25 (2018).",
+        "journal-title": "Data"
+      }
+    ],
+    "container-title": [
+      "Scientific Data"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-05381-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-05381-2",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41597-025-05381-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2025-09-08T00:00:44Z",
+      "timestamp": 1757289644000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41597-025-05381-2"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "5381"
+    ],
+    "URL": "https://doi.org/10.1038/s41597-025-05381-2",
+    "relation": {},
+    "ISSN": [
+      "2052-4463"
+    ],
+    "issn-type": [
+      {
+        "value": "2052-4463",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "10 December 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "10 June 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "25 July 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "1298"
+  }
+}

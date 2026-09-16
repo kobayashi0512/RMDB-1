@@ -1,0 +1,12 @@
+endpoint,raw_vascx,mass_readout,occupancy_conditioned,mass_minus_raw,mass_minus_raw_ci95
+Vessel Dice,0.8556,0.8647,0.8347,0.0091,0.0079 to 0.0103
+Vessel recall,0.7862,0.8248,0.8159,0.0386,0.0375 to 0.0397
+Thin-centreline recall,0.7971,0.8365,0.7608,0.0394,0.0381 to 0.0406
+clDice,0.8879,0.8956,0.8534,0.0077,0.0069 to 0.0084
+Precision,0.9396,0.9096,0.8560,-0.0300,-0.0307 to -0.0293
+Vessel-density absolute error,0.0199,0.0113,0.0071,-0.0086,-0.0088 to -0.0085
+Skeleton-density absolute error,0.0084,0.0054,0.0070,-0.0030,-0.0031 to -0.0029
+Branch-density absolute error,0.0027,0.0019,0.0030,-0.0007,-0.0008 to -0.0007
+Fractal-dimension absolute error,0.0476,0.0321,0.0482,-0.0156,-0.0162 to -0.0150
+Endpoint-density absolute error,0.0007,0.0007,0.0024,-0.0000,-0.0001 to 0.0001
+Component-count absolute error,7.0900,6.4700,6.4000,-0.6200,-1.3503 to 0.1200

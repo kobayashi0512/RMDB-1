@@ -1,0 +1,391 @@
+{
+  "1": {
+    "headers": [
+      "Resource",
+      "Analyzed units",
+      "Role"
+    ],
+    "rows": [
+      [
+        "FIVES",
+        "Development resource; 800 source images",
+        "Occupancy development"
+      ],
+      [
+        "RAV",
+        "206 locally available labeled images",
+        "Residual development; not independent validation"
+      ],
+      [
+        "Fundus-AVSeg",
+        "100 images",
+        "Previously inspected binary structural reference"
+      ],
+      [
+        "mBRSET development",
+        "978 inputs; 945 repeat images, 472 eyes, 253 contributors",
+        "Historical repeatability development subset"
+      ],
+      [
+        "mBRSET historical test",
+        "982 inputs; 950 repeat images, 475 eyes, 255 contributors",
+        "Patient-separated historical evaluation"
+      ],
+      [
+        "HRF quality / resolution",
+        "36 quality images; 18 good originals for scaling",
+        "Supplementary sensitivity, shared source eyes"
+      ]
+    ],
+    "widths": [
+      1.1,
+      2.35,
+      2.85
+    ],
+    "note": "mBRSET contains 257 development-partition and 258 test-partition patients; contributor counts exclude single-capture eyes. Local RAV availability is not a statement of unrestricted public access. All evaluation datasets have been inspected in earlier analyses."
+  },
+  "2": {
+    "headers": [
+      "Readout",
+      "Dice",
+      "Precision",
+      "Recall",
+      "Thin recall",
+      "clDice"
+    ],
+    "rows": [
+      [
+        "Raw",
+        "0.8556",
+        "0.9396",
+        "0.7862",
+        "0.7971",
+        "0.8879"
+      ],
+      [
+        "Residual corrected",
+        "0.8647",
+        "0.9096",
+        "0.8248",
+        "0.8365",
+        "0.8956"
+      ],
+      [
+        "Occupancy conditioned",
+        "0.8347",
+        "0.8560",
+        "0.8159",
+        "0.7608",
+        "0.8534"
+      ],
+      [
+        "Gaussian smoothing",
+        "0.8042",
+        "0.9481",
+        "0.6995",
+        "0.5708",
+        "0.7824"
+      ],
+      [
+        "Component cleanup",
+        "0.8498",
+        "0.9423",
+        "0.7748",
+        "0.7599",
+        "0.8739"
+      ]
+    ],
+    "widths": [
+      1.6,
+      0.9,
+      0.95,
+      0.9,
+      1.05,
+      0.9
+    ],
+    "note": "100 Fundus-AVSeg images. Higher values indicate greater agreement with the specified binary reference. Thin recall uses a reference-skeleton radius of at most two pixels on the 512 grid. Historical residual corrected is the mass arm, not the retrained full group. Point estimates come from the frozen ten-arm consolidation; no confidence intervals are substituted for the original core protocol."
+  },
+  "3": {
+    "headers": [
+      "Phenotype",
+      "Raw ICC",
+      "Conditioned ICC",
+      "MAD reduction % [95% CI]"
+    ],
+    "rows": [
+      [
+        "Vessel mass",
+        "0.6315 (0.5668 to 0.6868)",
+        "0.8120 (0.7700 to 0.8457)",
+        "-6.59 (-16.72 to 2.60)"
+      ],
+      [
+        "Artery mass",
+        "0.5745 (0.5016 to 0.6379)",
+        "0.7359 (0.6814 to 0.7798)",
+        "-18.05 (-28.71 to -8.17)"
+      ],
+      [
+        "Vein mass",
+        "0.6504 (0.5880 to 0.7028)",
+        "0.8168 (0.7750 to 0.8498)",
+        "-2.97 (-12.22 to 5.52)"
+      ],
+      [
+        "A/V mass ratio",
+        "0.5340 (0.4480 to 0.6058)",
+        "0.3639 (0.2688 to 0.4478)",
+        "-44.72 (-56.73 to -33.45)"
+      ],
+      [
+        "Vessel density",
+        "0.6455 (0.5833 to 0.6993)",
+        "0.8119 (0.7700 to 0.8453)",
+        "1.33 (-8.00 to 9.82)"
+      ],
+      [
+        "Skeleton density",
+        "0.6159 (0.5465 to 0.6756)",
+        "0.7955 (0.7515 to 0.8314)",
+        "-12.33 (-22.53 to -3.08)"
+      ],
+      [
+        "Branch density",
+        "0.5745 (0.4985 to 0.6429)",
+        "0.6620 (0.6022 to 0.7143)",
+        "22.28 (14.32 to 29.59)"
+      ],
+      [
+        "Endpoint density",
+        "0.4921 (0.4114 to 0.5602)",
+        "0.6065 (0.5292 to 0.6705)",
+        "30.28 (22.66 to 37.28)"
+      ],
+      [
+        "Component count",
+        "0.4682 (0.3764 to 0.5487)",
+        "0.4633 (0.3717 to 0.5425)",
+        "19.28 (10.72 to 27.02)"
+      ],
+      [
+        "Fractal dimension",
+        "0.6056 (0.5243 to 0.6741)",
+        "0.8063 (0.7506 to 0.8471)",
+        "-11.33 (-23.56 to -0.09)"
+      ],
+      [
+        "Occupancy entropy",
+        "0.5154 (0.4412 to 0.5809)",
+        "0.7746 (0.7218 to 0.8168)",
+        "14.86 (7.09 to 22.08)"
+      ],
+      [
+        "Conditional identity entropy",
+        "0.5633 (0.4877 to 0.6281)",
+        "0.5633 (0.4877 to 0.6281)",
+        "0.00 (-0.00 to 0.00)"
+      ]
+    ],
+    "widths": [
+      1.48,
+      1.43,
+      1.43,
+      1.96
+    ],
+    "note": "475 repeated eyes from 255 contributing patients. ICC columns include 95% confidence intervals (CI). Positive MAD reduction favors conditioning; negative values indicate larger absolute repeat deviation. Historical 10,000-resample protocol, unadjusted exploratory intervals. SEM and LoA for all core arms are supplied in the accompanying frozen agreement table."
+  },
+  "4": {
+    "headers": [
+      "Readout",
+      "ICC",
+      "MAD",
+      "SEM",
+      "LoA lower",
+      "LoA upper"
+    ],
+    "rows": [
+      [
+        "Raw",
+        "0.5340",
+        "0.028891",
+        "0.051779",
+        "-0.131409",
+        "0.152847"
+      ],
+      [
+        "Residual corrected",
+        "0.5339",
+        "0.027224",
+        "0.048877",
+        "-0.117850",
+        "0.147209"
+      ],
+      [
+        "Gaussian smoothing",
+        "0.5340",
+        "0.028890",
+        "0.051781",
+        "-0.131461",
+        "0.152828"
+      ],
+      [
+        "Component cleanup",
+        "0.5407",
+        "0.029940",
+        "0.053708",
+        "-0.138476",
+        "0.157287"
+      ],
+      [
+        "Mix 0.25",
+        "0.5023",
+        "0.030069",
+        "0.054326",
+        "-0.140066",
+        "0.159097"
+      ],
+      [
+        "Mix 0.50",
+        "0.4565",
+        "0.032753",
+        "0.059935",
+        "-0.157133",
+        "0.173859"
+      ],
+      [
+        "Mix 0.75",
+        "0.4078",
+        "0.036553",
+        "0.068610",
+        "-0.182531",
+        "0.197144"
+      ],
+      [
+        "Occupancy conditioned",
+        "0.3639",
+        "0.041810",
+        "0.081544",
+        "-0.219349",
+        "0.232452"
+      ],
+      [
+        "Confidence gated",
+        "0.4403",
+        "0.037952",
+        "0.071776",
+        "-0.188534",
+        "0.207965"
+      ],
+      [
+        "Budget matched",
+        "0.4299",
+        "0.034546",
+        "0.063943",
+        "-0.168954",
+        "0.184578"
+      ]
+    ],
+    "widths": [
+      1.55,
+      0.75,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "note": "Same historical test repeat subset. A/V denotes probability mass ratio, not vessel caliber ratio. MAD averages absolute deviations from the eye mean. SEM denotes pooled within-eye standard deviation. LoA use the first two manifest-ordered views and have no verified temporal orientation. Points are taken from the ten-arm 5,000-resample follow-up source."
+  },
+  "5": {
+    "headers": [
+      "Group",
+      "Dice",
+      "Precision",
+      "Thin recall",
+      "A/V ICC",
+      "A/V MAD"
+    ],
+    "rows": [
+      [
+        "Raw",
+        "0.8556",
+        "0.9396",
+        "0.7971",
+        "0.5340",
+        "0.028891"
+      ],
+      [
+        "Historical residual",
+        "0.8647",
+        "0.9096",
+        "0.8365",
+        "0.5339",
+        "0.027224"
+      ],
+      [
+        "Retrained full",
+        "0.8723",
+        "0.8953",
+        "0.8553",
+        "0.4952",
+        "0.025770"
+      ],
+      [
+        "No RGB input",
+        "0.8729",
+        "0.8943",
+        "0.8589",
+        "0.4882",
+        "0.024914"
+      ],
+      [
+        "No static logits",
+        "0.8722",
+        "0.8971",
+        "0.8493",
+        "0.5100",
+        "0.027504"
+      ],
+      [
+        "No explicit entropy",
+        "0.8713",
+        "0.8981",
+        "0.8485",
+        "0.5156",
+        "0.027530"
+      ],
+      [
+        "No Hessian input",
+        "0.8735",
+        "0.8916",
+        "0.8615",
+        "0.5143",
+        "0.025676"
+      ],
+      [
+        "One step",
+        "0.8729",
+        "0.8980",
+        "0.8580",
+        "0.5053",
+        "0.026038"
+      ],
+      [
+        "Plain convolution",
+        "0.8714",
+        "0.8906",
+        "0.8615",
+        "0.4769",
+        "0.024816"
+      ]
+    ],
+    "widths": [
+      1.55,
+      0.9,
+      0.95,
+      1.0,
+      0.9,
+      1.1
+    ],
+    "note": "Structure: 100 Fundus-AVSeg images. Agreement: 475 mBRSET eyes, 255 contributors. Retrained groups are means of metrics from three separately evaluated seeds, not prediction ensembles. Raw and historical residual are single frozen controls; historical residual outputs are reused under the common operator. Different cohorts supply structural and repeatability evidence. All group and seed intervals remain in the source CSVs."
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2026-09-14T21:36:10Z",
+      "timestamp": 1789421770941,
+      "version": "build-2803163510"
+    },
+    "reference-count": 21,
+    "publisher": "National University of Health Sciences",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2016-06-01T00:00:00Z",
+          "timestamp": 1464739200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journalchiromed.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Chiropractic Medicine"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jcm.2016.02.012",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2016-04-01T11:22:16Z",
+      "timestamp": 1459509736000
+    },
+    "page": "155-163",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 25906,
+    "title": [
+      "A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research"
+    ],
+    "prefix": "10.67400",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Terry K.",
+        "family": "Koo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mae Y.",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "57152",
+    "reference": [
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0005",
+        "series-title": "Interpretation and use of medical statistics",
+        "author": "Daly",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0010",
+        "series-title": "Foundations of clinical research: applications to practice",
+        "author": "Portney",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1016/S0031-9406(05)61211-4",
+        "article-title": "Reliability: what is it, and how is it measured?",
+        "volume": "86",
+        "author": "Bruton",
+        "year": "2000",
+        "journal-title": "Physiotherapy"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1007/BF02288803",
+        "article-title": "Estimation of the reliabilty of ratings",
+        "volume": "16",
+        "author": "Ebel",
+        "year": "1951",
+        "journal-title": "Psychometrika"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.2466/pr0.1966.19.1.3",
+        "article-title": "The intraclass correlation coefficient as a measure of reliability",
+        "volume": "19",
+        "author": "Bartko",
+        "year": "1966",
+        "journal-title": "Psychol Rep"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1016/S0140-6736(86)90837-8",
+        "article-title": "Statistical methods for assessing agreement between two methods of clinical measurement",
+        "volume": "1",
+        "author": "Bland",
+        "year": "1986",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1002/1097-4679(196201)18:1<95::AID-JCLP2270180131>3.0.CO;2-2",
+        "article-title": "A situation where the Pearson correlation coefficient leads to erroneous assessment of reliability",
+        "volume": "18",
+        "author": "Brown",
+        "year": "1962",
+        "journal-title": "J Clin Psychol"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.2165/00007256-200030010-00001",
+        "article-title": "Measures of reliability in sports medicine and science",
+        "volume": "30",
+        "author": "Hopkins",
+        "year": "2000",
+        "journal-title": "Sports Med"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0045",
+        "series-title": "Statistical methods for research workers",
+        "author": "Fisher",
+        "year": "1954"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "220",
+        "DOI": "10.1016/j.jmpt.2010.01.009",
+        "article-title": "Reliability of zygapophysial joint space measurements made from magnetic resonance imaging scans of acute low back pain subjects: comparison of 2 statistical methods",
+        "volume": "33",
+        "author": "Cramer",
+        "year": "2010",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1016/j.jmpt.2003.12.019",
+        "article-title": "Paraspinal skin temperature patterns: an interexaminer and intraexaminer reliability study",
+        "volume": "27",
+        "author": "Owens",
+        "year": "2004",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "584",
+        "DOI": "10.1016/j.jmpt.2011.05.009",
+        "article-title": "A mechano-acoustic indentor system for in vivo measurement of nonlinear elastic properties of soft tissue",
+        "volume": "34",
+        "author": "Koo",
+        "year": "2011",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "476",
+        "DOI": "10.1016/S0161-4754(03)00104-0",
+        "article-title": "Reliability of detection of lumbar lateral shift",
+        "volume": "26",
+        "author": "Clare",
+        "year": "2003",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "32",
+        "DOI": "10.1186/s12998-014-0032-9",
+        "article-title": "Comparison of two methods of collecting healthcare usage data in chiropractic clinics: patient-report versus documentation in patient files",
+        "volume": "22",
+        "author": "Houweling",
+        "year": "2014",
+        "journal-title": "Chiropr Man Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "190",
+        "DOI": "10.1016/j.jmpt.2013.12.010",
+        "article-title": "Reliability of the Goutallier classification in quantifying muscle fatty degeneration in the lumbar multifidus using magnetic resonance imaging",
+        "volume": "37",
+        "author": "Battaglia",
+        "year": "2014",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "493",
+        "DOI": "10.1016/S0161-4754(03)00106-4",
+        "article-title": "PulStar differential compliance spinal instrument: a randomized interexaminer and intraexaminer reliability study",
+        "volume": "26",
+        "author": "Leach",
+        "year": "2003",
+        "journal-title": "J Manipulative Physiol Ther"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "145",
+        "DOI": "10.1016/j.jcm.2012.02.002",
+        "article-title": "Measurement of lumbar lordosis in static standing posture with and without high-heeled shoes",
+        "volume": "11",
+        "author": "Russell",
+        "year": "2012",
+        "journal-title": "J Chiropr Med"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "30",
+        "DOI": "10.1037/1082-989X.1.1.30",
+        "article-title": "Forming inferences about some intraclass correlation coefficients",
+        "volume": "1",
+        "author": "McGraw",
+        "year": "1996",
+        "journal-title": "Psychol Methods"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "420",
+        "DOI": "10.1037/0033-2909.86.2.420",
+        "article-title": "Intraclass correlations: uses in assessing rater reliability",
+        "volume": "86",
+        "author": "Shrout",
+        "year": "1979",
+        "journal-title": "Psychol Bull"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.4055/cios.2012.4.2.149",
+        "article-title": "Pitfalls and important issues in testing reliability using intraclass correlation coefficients in orthopaedic research",
+        "volume": "4",
+        "author": "Lee",
+        "year": "2012",
+        "journal-title": "Clin Orthop Surg"
+      },
+      {
+        "key": "10.1016/j.jcm.2016.02.012_bb0105",
+        "author": "Nichols"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1016/j.jcm.2017.10.001",
+        "type": "erratum",
+        "label": "Erratum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2017-12-01T00:00:00Z",
+          "timestamp": 1512086400000
+        }
+      }
+    ],
+    "container-title": [
+      "Journal of Chiropractic Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1556370716000158?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1556370716000158?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          23
+        ]
+      ],
+      "date-time": "2026-07-23T08:49:40Z",
+      "timestamp": 1784796580000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://jcm.kglmeridian.com/doi/10.1016/j.jcm.2016.02.012"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "references-count": 21,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S1556370716000158"
+    ],
+    "URL": "https://doi.org/10.1016/j.jcm.2016.02.012",
+    "relation": {
+      "is-referenced-by": [
+        {
+          "id-type": "doi",
+          "id": "10.1186/s12903-026-08321-7",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1556-3707"
+    ],
+    "issn-type": [
+      {
+        "value": "1556-3707",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Chiropractic Medicine",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jcm.2016.02.012",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2016 Published by Elsevier Inc. on behalf of National University of Health Sciences.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

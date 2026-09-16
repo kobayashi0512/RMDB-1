@@ -1,0 +1,615 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2026-09-14T21:09:16Z",
+      "timestamp": 1789420156679,
+      "version": "build-2803163510"
+    },
+    "reference-count": 58,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2021-06-01T00:00:00Z",
+          "timestamp": 1622505600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2021-06-01T00:00:00Z",
+          "timestamp": 1622505600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2021-06-01T00:00:00Z",
+          "timestamp": 1622505600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1109/cvpr46437.2021.01629",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          2
+        ]
+      ],
+      "date-time": "2021-11-02T17:56:02Z",
+      "timestamp": 1635875762000
+    },
+    "page": "16555-16564",
+    "source": "Crossref",
+    "is-referenced-by-count": 505,
+    "title": [
+      "clDice - a Novel Topology-Preserving Loss Function for Tubular Structure Segmentation"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Suprosanna",
+        "family": "Shit",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Johannes C.",
+        "family": "Paetzold",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anjany",
+        "family": "Sekuboyina",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ivan",
+        "family": "Ezhov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Unger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrey",
+        "family": "Zhylka",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Josien P. W.",
+        "family": "Pluim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ulrich",
+        "family": "Bauer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bjoern H.",
+        "family": "Menze",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2012.04.009"
+      },
+      {
+        "key": "ref38",
+        "first-page": "234",
+        "article-title": "U-net: Convolutional networks for biomedical image segmentation",
+        "author": "ronneberger",
+        "year": "2015",
+        "journal-title": "MICCAI"
+      },
+      {
+        "key": "ref33",
+        "first-page": "32",
+        "article-title": "Generalized connectivity constraints for spatiotemporal 3D reconstruction",
+        "author": "oswald",
+        "year": "2014",
+        "journal-title": "ECCV"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2009.5206567"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-32692-0_71"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2019.2921327"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.503"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-67534-3_5"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0167-8655(01)00142-8"
+      },
+      {
+        "key": "ref34",
+        "article-title": "Transfer learning from synthetic data reduces need for labels to segment brain vasculature and neural pathways in 3d",
+        "author": "paetzold",
+        "year": "2019",
+        "journal-title": "International Conference on Medical Imaging with Deep Learning - Extended Abstract Track"
+      },
+      {
+        "key": "ref28",
+        "article-title": "Machine Learning for Aerial Image Labeling",
+        "author": "mnih",
+        "year": "2013",
+        "journal-title": "PhD thesis"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/3DV.2016.79"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00331"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2011.6126550"
+      },
+      {
+        "key": "ref1",
+        "volume": "1",
+        "author": "aleksandrov",
+        "year": "1998",
+        "journal-title": "Combinatorial Topology"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/JCI39733"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compmedimag.2019.101688"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1031120.1031121"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0734-189X(89)90147-3"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/S0218001495000341"
+      },
+      {
+        "key": "ref26",
+        "first-page": "328",
+        "article-title": "On topology preservation in 3D thinning",
+        "volume": "59",
+        "author": "ma",
+        "year": "1994"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/cgip.1994.1042"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-00934-2_11"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58583-9_14"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cell.2020.01.030"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cviu.2008.07.008"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISBI.2016.7493520"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0262-8856(95)99723-E"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1090/S0002-9904-1949-09175-9"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2013.222"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2008.4587440"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SFCS.2000.892133"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2014.09.007"
+      },
+      {
+        "key": "ref11",
+        "author": "edelsbrunner",
+        "year": "2010",
+        "journal-title": "Computational Topology An Introduction"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2018.2835450"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-59725-2_30"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.01082"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "755",
+        "DOI": "10.1109/TPAMI.2003.1201824",
+        "article-title": "A topology preserving level set method for geometric deformable models",
+        "volume": "25",
+        "author": "han",
+        "year": "2003",
+        "journal-title": "IEEE TPAMI"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.neucom.2018.05.011"
+      },
+      {
+        "key": "ref17",
+        "first-page": "5658",
+        "article-title": "Topology-preserving deep image segmentation",
+        "author": "hu",
+        "year": "2019",
+        "journal-title": "NeurIPS"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0036893"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-67389-9_17"
+      },
+      {
+        "key": "ref4",
+        "article-title": "Image-conditioned graph generation for road network extraction",
+        "author": "belli",
+        "year": "2019"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-32239-7_11"
+      },
+      {
+        "key": "ref6",
+        "first-page": "424",
+        "article-title": "3D U-Net: learning dense volumetric segmentation from sparse annotation",
+        "author": "çiçek",
+        "year": "2016",
+        "journal-title": "MICCAI"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46723-8_53"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2020.3013679"
+      },
+      {
+        "key": "ref7",
+        "first-page": "703",
+        "article-title": "To-wards reliable evaluation of algorithms for road network reconstruction from aerial images",
+        "author": "citraro",
+        "year": "2020",
+        "journal-title": "European Conference on Computer Vision"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2016.2519025"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-018-30533-3"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12880-015-0068-x"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-67558-9_28"
+      },
+      {
+        "key": "ref48",
+        "first-page": "613257",
+        "article-title": "Automated analysis of whole brain vasculature using machine learning",
+        "author": "todorov",
+        "year": "2019"
+      },
+      {
+        "key": "ref47",
+        "article-title": "Deepvesselnet: Vessel segmentation, centerline prediction, and bifurcation detection in 3-d angiographic volumes",
+        "author": "tetteh",
+        "year": "2018"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0031-3203(94)00104-T"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-007-0102-8"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2013.290"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2004.825627"
+      }
+    ],
+    "event": {
+      "name": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "location": "Nashville, TN, USA",
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            20
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            25
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/9577055/9577056/09578225.pdf?arnumber=9578225",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          10
+        ]
+      ],
+      "date-time": "2022-05-10T11:47:59Z",
+      "timestamp": 1652183279000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9578225/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    },
+    "references-count": 58,
+    "URL": "https://doi.org/10.1109/cvpr46437.2021.01629",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "data": {
+    "id": "10.48550/arxiv.2602.08580",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.48550/arxiv.2602.08580",
+      "prefix": "10.48550",
+      "suffix": "arxiv.2602.08580",
+      "identifiers": [
+        {
+          "identifier": "2602.08580",
+          "identifierType": "arXiv"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "arXiv",
+          "alternateIdentifier": "2602.08580"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Quiros, Jose D. Vargas",
+          "nameType": "Personal",
+          "givenName": "Jose D. Vargas",
+          "familyName": "Quiros",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Beyeler, Michael J.",
+          "nameType": "Personal",
+          "givenName": "Michael J.",
+          "familyName": "Beyeler",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Vela, Sofia Ortin",
+          "nameType": "Personal",
+          "givenName": "Sofia Ortin",
+          "familyName": "Vela",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Center, EyeNED Reading",
+          "nameType": "Personal",
+          "givenName": "EyeNED Reading",
+          "familyName": "Center",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Bergmann, Sven",
+          "nameType": "Personal",
+          "givenName": "Sven",
+          "familyName": "Bergmann",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Klaver, Caroline C. W.",
+          "nameType": "Personal",
+          "givenName": "Caroline C. W.",
+          "familyName": "Klaver",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Liefers, Bart",
+          "nameType": "Personal",
+          "givenName": "Bart",
+          "familyName": "Liefers",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Consortium, VascX Research",
+          "nameType": "Personal",
+          "givenName": "VascX Research",
+          "familyName": "Consortium",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "retinalysis-vascx: An explainable software toolbox for the extraction of retinal vascular biomarkers"
+        }
+      ],
+      "publisher": "arXiv",
+      "container": {},
+      "publicationYear": 2026,
+      "subjects": [
+        {
+          "lang": "en",
+          "subject": "Tissues and Organs (q-bio.TO)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "lang": "en",
+          "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "subject": "FOS: Biological sciences",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        },
+        {
+          "subject": "FOS: Computer and information sciences",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2026-02-09T12:19:33Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-02-10T02:48:05Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-04-22T16:38:43Z",
+          "dateType": "Submitted",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2026-04-23T01:03:58Z",
+          "dateType": "Updated",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2026-06-01T15:31:56Z",
+          "dateType": "Submitted",
+          "dateInformation": "v3"
+        },
+        {
+          "date": "2026-06-02T02:17:38Z",
+          "dateType": "Updated",
+          "dateInformation": "v3"
+        },
+        {
+          "date": "2026-08-31T10:44:26Z",
+          "dateType": "Submitted",
+          "dateInformation": "v4"
+        },
+        {
+          "date": "2026-09-01T01:55:25Z",
+          "dateType": "Updated",
+          "dateInformation": "v4"
+        },
+        {
+          "date": "2026-02",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        }
+      ],
+      "language": null,
+      "types": {
+        "ris": "GEN",
+        "bibtex": "misc",
+        "citeproc": "article",
+        "schemaOrg": "CreativeWork",
+        "resourceType": "Article",
+        "resourceTypeGeneral": "Preprint"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": "4",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "Automatic extraction of retinal vascular biomarkers from color fundus images (CFI) is crucial for large-scale studies of the retinal vasculature. We present VascX, an open-source Python toolbox that extracts biomarkers from CFI artery-vein segmentations. VascX starts from vessel segmentation masks, extracts their skeletons, builds undirected and directed vessel graphs, and resolves vessel segments into longer vessels. A comprehensive set of biomarkers is derived, including vascular density, central retinal equivalents (CREs), and tortuosity. Spatially localized biomarkers may be calculated over grids placed relative to the fovea and optic disc. VascX is released via GitHub and PyPI with comprehensive documentation and examples. Our test-retest reproducibility analysis on repeat imaging of the same eye by different devices shows that most VascX biomarkers have moderate to excellent agreement (ICC &gt; 0.5), with important differences in the level of robustness of different biomarkers. Our analyses of biomarker sensitivity to image perturbations and heuristic parameter values support these differences and further characterize VascX biomarkers. Ultimately, VascX provides an explainable and easily modifiable feature-extraction toolbox that complements segmentation to produce reliable retinal vascular biomarkers. Our graph-based biomarker computation stages support reproducible, region-aware measurements suited for large-scale clinical and epidemiological research. By enabling easy extraction of existing biomarkers and rapid experimentation with new ones, VascX supports oculomics research. Its robustness and computational efficiency facilitate scalable deployment in large databases, while open-source distribution lowers barriers to adoption for ophthalmic researchers and clinicians.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjAyLjA4NTgwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwMi4wODU4MDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5RdWlyb3MsIEpvc2UgRC4gVmFyZ2FzPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Kb3NlIEQuIFZhcmdhczwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5RdWlyb3M8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+QmV5ZWxlciwgTWljaGFlbCBKLjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWljaGFlbCBKLjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5CZXllbGVyPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlZlbGEsIFNvZmlhIE9ydGluPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Tb2ZpYSBPcnRpbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5WZWxhPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNlbnRlciwgRXllTkVEIFJlYWRpbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkV5ZU5FRCBSZWFkaW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNlbnRlcjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5CZXJnbWFubiwgU3ZlbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U3ZlbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5CZXJnbWFubjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5LbGF2ZXIsIENhcm9saW5lIEMuIFcuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5DYXJvbGluZSBDLiBXLjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5LbGF2ZXI8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGllZmVycywgQmFydDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QmFydDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaWVmZXJzPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNvbnNvcnRpdW0sIFZhc2NYIFJlc2VhcmNoPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5WYXNjWCBSZXNlYXJjaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Db25zb3J0aXVtPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5yZXRpbmFseXNpcy12YXNjeDogQW4gZXhwbGFpbmFibGUgc29mdHdhcmUgdG9vbGJveCBmb3IgdGhlIGV4dHJhY3Rpb24gb2YgcmV0aW5hbCB2YXNjdWxhciBiaW9tYXJrZXJzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+VGlzc3VlcyBhbmQgT3JnYW5zIChxLWJpby5UTyk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRlciBWaXNpb24gYW5kIFBhdHRlcm4gUmVjb2duaXRpb24gKGNzLkNWKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IEJpb2xvZ2ljYWwgc2NpZW5jZXM8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyLTA5VDEyOjE5OjMzWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyLTEwVDAyOjQ4OjA1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjYtMDQtMjJUMTY6Mzg6NDNaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjYtMDQtMjNUMDE6MDM6NThaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MyI+MjAyNi0wNi0wMVQxNTozMTo1Nlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MyI+MjAyNi0wNi0wMlQwMjoxNzozOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InY0Ij4yMDI2LTA4LTMxVDEwOjQ0OjI2WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InY0Ij4yMDI2LTA5LTAxVDAxOjU1OjI1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDI8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+NDwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5BdXRvbWF0aWMgZXh0cmFjdGlvbiBvZiByZXRpbmFsIHZhc2N1bGFyIGJpb21hcmtlcnMgZnJvbSBjb2xvciBmdW5kdXMgaW1hZ2VzIChDRkkpIGlzIGNydWNpYWwgZm9yIGxhcmdlLXNjYWxlIHN0dWRpZXMgb2YgdGhlIHJldGluYWwgdmFzY3VsYXR1cmUuIFdlIHByZXNlbnQgVmFzY1gsIGFuIG9wZW4tc291cmNlIFB5dGhvbiB0b29sYm94IHRoYXQgZXh0cmFjdHMgYmlvbWFya2VycyBmcm9tIENGSSBhcnRlcnktdmVpbiBzZWdtZW50YXRpb25zLiBWYXNjWCBzdGFydHMgZnJvbSB2ZXNzZWwgc2VnbWVudGF0aW9uIG1hc2tzLCBleHRyYWN0cyB0aGVpciBza2VsZXRvbnMsIGJ1aWxkcyB1bmRpcmVjdGVkIGFuZCBkaXJlY3RlZCB2ZXNzZWwgZ3JhcGhzLCBhbmQgcmVzb2x2ZXMgdmVzc2VsIHNlZ21lbnRzIGludG8gbG9uZ2VyIHZlc3NlbHMuIEEgY29tcHJlaGVuc2l2ZSBzZXQgb2YgYmlvbWFya2VycyBpcyBkZXJpdmVkLCBpbmNsdWRpbmcgdmFzY3VsYXIgZGVuc2l0eSwgY2VudHJhbCByZXRpbmFsIGVxdWl2YWxlbnRzIChDUkVzKSwgYW5kIHRvcnR1b3NpdHkuIFNwYXRpYWxseSBsb2NhbGl6ZWQgYmlvbWFya2VycyBtYXkgYmUgY2FsY3VsYXRlZCBvdmVyIGdyaWRzIHBsYWNlZCByZWxhdGl2ZSB0byB0aGUgZm92ZWEgYW5kIG9wdGljIGRpc2MuIFZhc2NYIGlzIHJlbGVhc2VkIHZpYSBHaXRIdWIgYW5kIFB5UEkgd2l0aCBjb21wcmVoZW5zaXZlIGRvY3VtZW50YXRpb24gYW5kIGV4YW1wbGVzLiBPdXIgdGVzdC1yZXRlc3QgcmVwcm9kdWNpYmlsaXR5IGFuYWx5c2lzIG9uIHJlcGVhdCBpbWFnaW5nIG9mIHRoZSBzYW1lIGV5ZSBieSBkaWZmZXJlbnQgZGV2aWNlcyBzaG93cyB0aGF0IG1vc3QgVmFzY1ggYmlvbWFya2VycyBoYXZlIG1vZGVyYXRlIHRvIGV4Y2VsbGVudCBhZ3JlZW1lbnQgKElDQyAmZ3Q7IDAuNSksIHdpdGggaW1wb3J0YW50IGRpZmZlcmVuY2VzIGluIHRoZSBsZXZlbCBvZiByb2J1c3RuZXNzIG9mIGRpZmZlcmVudCBiaW9tYXJrZXJzLiBPdXIgYW5hbHlzZXMgb2YgYmlvbWFya2VyIHNlbnNpdGl2aXR5IHRvIGltYWdlIHBlcnR1cmJhdGlvbnMgYW5kIGhldXJpc3RpYyBwYXJhbWV0ZXIgdmFsdWVzIHN1cHBvcnQgdGhlc2UgZGlmZmVyZW5jZXMgYW5kIGZ1cnRoZXIgY2hhcmFjdGVyaXplIFZhc2NYIGJpb21hcmtlcnMuIFVsdGltYXRlbHksIFZhc2NYIHByb3ZpZGVzIGFuIGV4cGxhaW5hYmxlIGFuZCBlYXNpbHkgbW9kaWZpYWJsZSBmZWF0dXJlLWV4dHJhY3Rpb24gdG9vbGJveCB0aGF0IGNvbXBsZW1lbnRzIHNlZ21lbnRhdGlvbiB0byBwcm9kdWNlIHJlbGlhYmxlIHJldGluYWwgdmFzY3VsYXIgYmlvbWFya2Vycy4gT3VyIGdyYXBoLWJhc2VkIGJpb21hcmtlciBjb21wdXRhdGlvbiBzdGFnZXMgc3VwcG9ydCByZXByb2R1Y2libGUsIHJlZ2lvbi1hd2FyZSBtZWFzdXJlbWVudHMgc3VpdGVkIGZvciBsYXJnZS1zY2FsZSBjbGluaWNhbCBhbmQgZXBpZGVtaW9sb2dpY2FsIHJlc2VhcmNoLiBCeSBlbmFibGluZyBlYXN5IGV4dHJhY3Rpb24gb2YgZXhpc3RpbmcgYmlvbWFya2VycyBhbmQgcmFwaWQgZXhwZXJpbWVudGF0aW9uIHdpdGggbmV3IG9uZXMsIFZhc2NYIHN1cHBvcnRzIG9jdWxvbWljcyByZXNlYXJjaC4gSXRzIHJvYnVzdG5lc3MgYW5kIGNvbXB1dGF0aW9uYWwgZWZmaWNpZW5jeSBmYWNpbGl0YXRlIHNjYWxhYmxlIGRlcGxveW1lbnQgaW4gbGFyZ2UgZGF0YWJhc2VzLCB3aGlsZSBvcGVuLXNvdXJjZSBkaXN0cmlidXRpb24gbG93ZXJzIGJhcnJpZXJzIHRvIGFkb3B0aW9uIGZvciBvcGh0aGFsbWljIHJlc2VhcmNoZXJzIGFuZCBjbGluaWNpYW5zLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+      "url": "https://arxiv.org/abs/2602.08580",
+      "contentUrl": null,
+      "metadataVersion": 3,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2026-02-10T04:54:56.000Z",
+      "registered": "2026-02-10T04:54:56.000Z",
+      "published": "2026",
+      "updated": "2026-09-01T05:06:20.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "arxiv.content",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "arxiv",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.48550/arxiv.2602.08580",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

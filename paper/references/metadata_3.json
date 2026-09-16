@@ -1,0 +1,749 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2026-08-23T15:09:39Z",
+      "timestamp": 1787497779942,
+      "version": "build-2736575974"
+    },
+    "reference-count": 34,
+    "publisher": "Association for Research in Vision and Ophthalmology (ARVO)",
+    "issue": "13",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              14
+            ]
+          ],
+          "date-time": "2024-11-14T00:00:00Z",
+          "timestamp": 1731542400000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Invest. Ophthalmol. Vis. Sci."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ]
+    },
+    "DOI": "10.1167/iovs.65.13.24",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2024-11-14T10:30:49Z",
+      "timestamp": 1731580249000
+    },
+    "page": "24",
+    "source": "Crossref",
+    "is-referenced-by-count": 8,
+    "title": [
+      "Evaluating the Impact of Retinal Vessel Segmentation Metrics on Retest Reliability in a Clinical Setting: A Comparative Analysis Using AutoMorph"
+    ],
+    "prefix": "10.1167",
+    "volume": "65",
+    "author": [
+      {
+        "given": "Samuel D.",
+        "family": "Giesser",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ferhat",
+        "family": "Turgut",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          },
+          {
+            "name": "Gutblick Research, Pfäffikon, Switzerland"
+          },
+          {
+            "name": "Department of Ophthalmology, Semmelweis University, Budapest, Hungary"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amr",
+        "family": "Saad",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jay R.",
+        "family": "Zoellin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chiara",
+        "family": "Sommer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yukun",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NIHR Biomedical Research Centre at Moorfields Eye Hospital NHS Foundation Trust, London, United Kingdom"
+          },
+          {
+            "name": "Institute of Ophthalmology, University College London, London, United Kingdom"
+          },
+          {
+            "name": "Department of Medical Physics and Biomedical Engineering, University College London, London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siegfried K.",
+        "family": "Wagner",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NIHR Biomedical Research Centre at Moorfields Eye Hospital NHS Foundation Trust, London, United Kingdom"
+          },
+          {
+            "name": "Institute of Ophthalmology, University College London, London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pearse A.",
+        "family": "Keane",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NIHR Biomedical Research Centre at Moorfields Eye Hospital NHS Foundation Trust, London, United Kingdom"
+          },
+          {
+            "name": "Institute of Ophthalmology, University College London, London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Becker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          },
+          {
+            "name": "Department of Ophthalmology, University of Heidelberg, Heidelberg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Delia Cabrera",
+        "family": "DeBuc",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bascom Palmer Eye Institute, Miller School of Medicine, University of Miami, Miami, Florida, United States"
+          },
+          {
+            "name": "iScreen 2 Prevent LLC, Miami, FL, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gábor Márk",
+        "family": "Somfai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Stadtspital Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Spross Research Institute, Zurich, Switzerland"
+          },
+          {
+            "name": "Department of Ophthalmology, Semmelweis University, Budapest, Hungary"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "27",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "bib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "282",
+        "DOI": "10.1016/S0161-6420(01)00922-8",
+        "article-title": "Cup-to-disc ratio, intraocular pressure, and primary open-angle glaucoma in retinal venous occlusion",
+        "volume": "109",
+        "author": "Beaumont",
+        "year": "2002",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "issue": "1",
+        "key": "bib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "e001124",
+        "DOI": "10.1136/openhrt-2019-001124",
+        "article-title": "Association between hypertension and retinal vascular features in ultra-widefield fundus imaging",
+        "volume": "7",
+        "author": "Robertson",
+        "year": "2020",
+        "journal-title": "Open Heart"
+      },
+      {
+        "key": "bib3",
+        "first-page": "3873",
+        "article-title": "Towards stroke biomarkers on fundus retinal imaging: a comparison between vasculature embeddings and general purpose convolutional neural networks",
+        "volume": "2021",
+        "author": "Coronado",
+        "year": "2021",
+        "journal-title": "Annu Int Conf IEEE Eng Med Biol Soc"
+      },
+      {
+        "key": "bib4",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.1136/bjophthalmol-2021-319807",
+        "article-title": "Retinal age gap as a predictive biomarker for mortality risk",
+        "volume": "107",
+        "author": "Zhu",
+        "year": "2023",
+        "journal-title": "Br J Ophthalmol"
+      },
+      {
+        "issue": "3",
+        "key": "bib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "241",
+        "DOI": "10.1097/WNO.0b013e318290194f",
+        "article-title": "A prospective photographic study of the ocular fundus in obstructive sleep apnea",
+        "volume": "33",
+        "author": "Fraser",
+        "year": "2013",
+        "journal-title": "J Neuroophthalmol"
+      },
+      {
+        "issue": "39",
+        "key": "bib6",
+        "doi-asserted-by": "publisher",
+        "first-page": "20427",
+        "DOI": "10.1074/jbc.M116.744656",
+        "article-title": "Retinal hypercholesterolemia triggers cholesterol accumulation and esterification in photoreceptor cells",
+        "volume": "291",
+        "author": "Saadane",
+        "year": "2016",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "bib7",
+        "doi-asserted-by": "publisher",
+        "first-page": "823436",
+        "DOI": "10.3389/fcvm.2022.823436",
+        "article-title": "A deep learning system for fully automated retinal vessel measurement in high throughput image analysis",
+        "volume": "9",
+        "author": "Shi",
+        "year": "2022",
+        "journal-title": "Front Cardiovasc Med"
+      },
+      {
+        "issue": "7",
+        "key": "bib8",
+        "first-page": "3320",
+        "article-title": "Comparison of two free retinal vascular measurement software packages: IVAN and VAMPIRE",
+        "volume": "56",
+        "author": "Downie",
+        "year": "2015",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "issue": "7",
+        "key": "bib10",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1167/tvst.11.7.12",
+        "article-title": "AutoMorph: automated retinal vascular morphology quantification via a deep learning pipeline",
+        "volume": "11",
+        "author": "Zhou",
+        "year": "2022",
+        "journal-title": "Transl Vis Sci Technol"
+      },
+      {
+        "key": "bib11",
+        "first-page": "150",
+        "article-title": "Experience In using the VAMPIRE retinal analysis tool to assess tortuosity in patients undergoing bevacizumab (Avastin) treatment for wet age-related macular degeneration (AMD)",
+        "volume": "52",
+        "author": "Tiew",
+        "year": "2011",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "key": "bib12",
+        "doi-asserted-by": "publisher",
+        "first-page": "105969",
+        "DOI": "10.1016/j.cmpb.2021.105969",
+        "article-title": "On the quantitative effects of compression of retinal fundus images on morphometric vascular measurements in VAMPIRE",
+        "volume": "202",
+        "author": "Mookiah",
+        "year": "2021",
+        "journal-title": "Comput Methods Programs Biomed"
+      },
+      {
+        "issue": "7",
+        "key": "bib13",
+        "first-page": "495",
+        "article-title": "A new method to measure peripheral retinal vascular caliber over an extended area",
+        "volume": "17",
+        "author": "Yim-Lui Cheung",
+        "year": "2010",
+        "journal-title": "Microcirculation"
+      },
+      {
+        "issue": "2",
+        "key": "bib15",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1167/tvst.7.2.12",
+        "article-title": "Towards standardization of quantitative retinal vascular parameters: comparison of SIVA and VAMPIRE measurements in the Lothian Birth Cohort 1936",
+        "volume": "7",
+        "author": "McGrory",
+        "year": "2018",
+        "journal-title": "Transl Vis Sci Technol"
+      },
+      {
+        "issue": "5",
+        "key": "bib17",
+        "doi-asserted-by": "publisher",
+        "first-page": "478",
+        "DOI": "10.1001/jamapsychiatry.2023.0171",
+        "article-title": "Association between retinal features from multimodal imaging and schizophrenia",
+        "volume": "80",
+        "author": "Wagner",
+        "year": "2023",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "key": "bib18",
+        "doi-asserted-by": "publisher",
+        "first-page": "11868",
+        "DOI": "10.1038/s41598-022-16089-3",
+        "article-title": "Fractal dimension of retinal vasculature as an image quality metric for automated fundus image analysis systems",
+        "volume": "12",
+        "author": "Lyu",
+        "year": "2022",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "4",
+        "key": "bib19",
+        "doi-asserted-by": "publisher",
+        "first-page": "2652",
+        "DOI": "10.3390/app13042652",
+        "article-title": "Review: a survey on objective evaluation of image sharpness",
+        "volume": "13",
+        "author": "Zhu",
+        "year": "2023",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "issue": "3",
+        "key": "bib20",
+        "doi-asserted-by": "publisher",
+        "first-page": "322",
+        "DOI": "10.1136/bjo.87.3.322",
+        "article-title": "Acutance, an objective measure of retinal nerve fibre image clarity",
+        "volume": "87",
+        "author": "Choong",
+        "year": "2003",
+        "journal-title": "Br J Ophthalmol"
+      },
+      {
+        "issue": "5",
+        "key": "bib21",
+        "doi-asserted-by": "publisher",
+        "first-page": "7",
+        "DOI": "10.1167/tvst.9.5.7",
+        "article-title": "Understanding the impact of individual perceived image quality features on visual performance",
+        "volume": "9",
+        "author": "Benoit",
+        "year": "2020",
+        "journal-title": "Transl Vis Sci Technol"
+      },
+      {
+        "key": "bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "87",
+        "DOI": "10.1117/12.477378",
+        "article-title": "Measuring colourfulness in natural images",
+        "volume": "5007",
+        "author": "Hasler",
+        "year": "2003",
+        "journal-title": "Proc SPIE"
+      },
+      {
+        "issue": "3",
+        "key": "bib23",
+        "first-page": "26",
+        "article-title": "The feasibility of contrast-to-noise ratio on measurements to evaluate CT image quality in terms of low-contrast detailed detectability",
+        "volume": "8",
+        "author": "Alsleem",
+        "year": "2020",
+        "journal-title": "Med Sci (Basel)"
+      },
+      {
+        "issue": "3",
+        "key": "bib24",
+        "doi-asserted-by": "publisher",
+        "first-page": "338",
+        "DOI": "10.1007/s10278-007-9044-5",
+        "article-title": "Information entropy measure for evaluation of image quality",
+        "volume": "21",
+        "author": "Tsai",
+        "year": "2008",
+        "journal-title": "J Digit Imaging"
+      },
+      {
+        "issue": "1",
+        "key": "bib25",
+        "doi-asserted-by": "publisher",
+        "first-page": "297",
+        "DOI": "10.1109/TMI.2020.3025467",
+        "article-title": "Improving blood vessel tortuosity measurements via highly sampled numerical integration of the Frenet-Serret equations",
+        "volume": "40",
+        "author": "Brummer",
+        "year": "2021",
+        "journal-title": "IEEE Trans Med Imaging"
+      },
+      {
+        "key": "bib26",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1016/j.exer.2012.10.015",
+        "article-title": "Retinal vessel tortuosity measures and their applications",
+        "volume": "106",
+        "author": "Kalitzeos",
+        "year": "2013",
+        "journal-title": "Exp Eye Res"
+      },
+      {
+        "key": "bib27",
+        "doi-asserted-by": "publisher",
+        "first-page": "156",
+        "DOI": "10.1038/s41586-023-06555-x",
+        "article-title": "A foundation model for generalizable disease detection from retinal images",
+        "volume": "622",
+        "author": "Zhou",
+        "year": "2023",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "8",
+        "key": "bib29",
+        "doi-asserted-by": "publisher",
+        "first-page": "567",
+        "DOI": "10.1016/S1350-4533(00)00074-6",
+        "article-title": "A quantitative index for the measurement of the tortuosity of blood vessels",
+        "volume": "22",
+        "author": "Dougherty",
+        "year": "2000",
+        "journal-title": "Med Eng Phys"
+      },
+      {
+        "key": "bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "4675",
+        "DOI": "10.1109/IEMBS.2006.260558",
+        "article-title": "Thickness dependent tortuosity estimation for retinal blood vessels",
+        "volume": "2006",
+        "author": "Azegrouz",
+        "year": "2006",
+        "journal-title": "Conf Proc IEEE Eng Med Biol Soc"
+      },
+      {
+        "issue": "3",
+        "key": "bib31",
+        "doi-asserted-by": "publisher",
+        "first-page": "310",
+        "DOI": "10.1109/TMI.2007.904657",
+        "article-title": "A novel method for the automatic grading of retinal vessel tortuosity",
+        "volume": "27",
+        "author": "Grisan",
+        "year": "2008",
+        "journal-title": "IEEE Trans Med Imaging"
+      },
+      {
+        "key": "bib32",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.1016/j.dadm.2016.11.001",
+        "article-title": "The application of retinal fundus camera imaging in dementia: a systematic review",
+        "volume": "6",
+        "author": "McGrory",
+        "year": "2016",
+        "journal-title": "Alzheimers Dement (Amst)"
+      },
+      {
+        "issue": "8",
+        "key": "bib33",
+        "first-page": "240",
+        "article-title": "Predicting major adverse cardiovascular events with colour fundus photograph in the AlzEye Study",
+        "volume": "64",
+        "author": "Zhou",
+        "year": "2023",
+        "journal-title": "Invest Ophthalmol Vis Sci."
+      },
+      {
+        "issue": "1",
+        "key": "bib34",
+        "doi-asserted-by": "publisher",
+        "first-page": "475",
+        "DOI": "10.1038/s41597-022-01564-3",
+        "article-title": "FIVES: a fundus image dataset for artificial intelligence based vessel segmentation",
+        "volume": "9",
+        "author": "Jin",
+        "year": "2022",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "bib9",
+        "first-page": "657",
+        "article-title": "Using artificial intelligence to analyse the retinal vascular network: the future of cardiovascular risk assessment based on oculomics? A narrative review",
+        "volume-title": "Ophthalmol Ther",
+        "author": "Arnould",
+        "year": "2023"
+      },
+      {
+        "key": "bib14",
+        "article-title": "Novel VAMPIRE algorithms for quantitative analysis of the retinal vascular structure",
+        "volume-title": "Fourth IEEE Biosignals and Biorobotics Conference (ISSNIP/BRC)",
+        "author": "Trucco",
+        "year": "2013"
+      },
+      {
+        "key": "bib16",
+        "first-page": "112",
+        "article-title": "Retinal microvascular parameters are not significantly associated with mild cognitive impairment in the nothern Ireland cohort for the longitudinal study of ageing",
+        "volume-title": "BMC Neurol",
+        "author": "O'Neill",
+        "year": "2021"
+      },
+      {
+        "key": "bib28",
+        "first-page": "1057",
+        "article-title": "Association between retinal fractal dimension and schizophrenia",
+        "volume-title": "Invest Ophthalmol Vis Sci",
+        "author": "Liu",
+        "year": "2022"
+      }
+    ],
+    "container-title": [
+      "Investigative Ophthalmology &amp; Visual Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://iovs.arvojournals.org/article.aspx?articleid=2802240",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2024-11-14T10:30:54Z",
+      "timestamp": 1731580254000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iovs.arvojournals.org/article.aspx?articleid=2802240"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ]
+    },
+    "references-count": 34,
+    "journal-issue": {
+      "issue": "13",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            4
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1167/iovs.65.13.24",
+    "relation": {},
+    "ISSN": [
+      "1552-5783"
+    ],
+    "issn-type": [
+      {
+        "value": "1552-5783",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          11
+        ]
+      ],
+      "date-time": "2026-09-11T20:35:37Z",
+      "timestamp": 1789158937877,
+      "version": "build-2803163510"
+    },
+    "reference-count": 59,
+    "publisher": "Association for Research in Vision and Ophthalmology (ARVO)",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              23
+            ]
+          ],
+          "date-time": "2025-07-23T00:00:00Z",
+          "timestamp": 1753228800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Trans. Vis. Sci. Tech."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          23
+        ]
+      ]
+    },
+    "DOI": "10.1167/tvst.14.7.19",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          23
+        ]
+      ],
+      "date-time": "2025-07-23T14:00:45Z",
+      "timestamp": 1753279245000
+    },
+    "page": "19",
+    "source": "Crossref",
+    "is-referenced-by-count": 8,
+    "title": [
+      "VascX Models: Deep Ensembles for Retinal Vascular Analysis From Color Fundus Images"
+    ],
+    "prefix": "10.1167",
+    "volume": "14",
+    "author": [
+      {
+        "given": "Jose",
+        "family": "Vargas Quiros",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Epidemiology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bart",
+        "family": "Liefers",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Epidemiology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Karin A.",
+        "family": "van Garderen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Epidemiology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jeroen P.",
+        "family": "Vermeulen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Epidemiology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Caroline",
+        "family": "Klaver",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Epidemiology, Erasmus University Medical Center, Rotterdam, the Netherlands"
+          },
+          {
+            "name": "Department of Ophthalmology, Radboud University Medical Center, Nijmegen, the Netherlands"
+          },
+          {
+            "name": "Institute of Molecular and Clinical Ophthalmology, University of Basel, Basel, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "27",
+    "reference": [
+      {
+        "issue": "4",
+        "key": "bib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "472",
+        "DOI": "10.1016/0002-9394(74)90457-7",
+        "article-title": "General caliber of the retinal arteries expressed as the equivalent width of the central retinal artery",
+        "volume": "77",
+        "author": "Parr",
+        "year": "1974",
+        "journal-title": "Am J Ophthalmol"
+      },
+      {
+        "issue": "12",
+        "key": "bib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2269",
+        "DOI": "10.1016/S0161-6420(99)90525-0",
+        "article-title": "Methods for evaluation of retinal microvascular abnormalities associated with hypertension/sclerosis in the atherosclerosis risk in communities study",
+        "volume": "106",
+        "author": "Hubbard",
+        "year": "1999",
+        "journal-title": "Ophthalmology"
+      },
+      {
+        "key": "bib3",
+        "doi-asserted-by": "publisher",
+        "first-page": "2341",
+        "DOI": "10.1167/iovs.05-1539",
+        "article-title": "Retinal vascular caliber, cardiovascular risk factors, and inflammation: the Multi-Ethnic Study of Atherosclerosis (MESA)",
+        "volume": "47",
+        "author": "Wong",
+        "year": "2006",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "key": "bib4",
+        "doi-asserted-by": "publisher",
+        "first-page": "1019",
+        "DOI": "10.1001/archophthalmol.2012.560",
+        "article-title": "Relationship of blood pressure and other factors to serial retinal arteriolar diameter measurements over time: the Beaver Dam Eye Study",
+        "volume": "130",
+        "author": "Klein",
+        "year": "2012",
+        "journal-title": "Arch Ophthalmol"
+      },
+      {
+        "key": "bib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1858",
+        "DOI": "10.1167/iovs.16-21202",
+        "article-title": "A new method of magnification correction for accurately measuring retinal vessel calibers from fundus photographs",
+        "volume": "58",
+        "author": "Iwase",
+        "year": "2017",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "key": "bib6",
+        "doi-asserted-by": "publisher",
+        "first-page": "886",
+        "DOI": "10.1038/hr.2016.81",
+        "article-title": "Retinal microvascular diameter, a hypertension-related trait, in ECG-gated vs. non-gated images analyzed by IVAN and SIVA",
+        "volume": "39",
+        "author": "Wei",
+        "year": "2016",
+        "journal-title": "Hypertens Res"
+      },
+      {
+        "key": "bib7",
+        "doi-asserted-by": "publisher",
+        "first-page": "2208",
+        "DOI": "10.1167/iovs.18-26276",
+        "article-title": "Factors associated with retinal vessel diameters in an elderly population: the Thessaloniki Eye Study",
+        "volume": "60",
+        "author": "Dervenis",
+        "year": "2019",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "key": "bib8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1380",
+        "DOI": "10.1097/HJH.0b013e328347266c",
+        "article-title": "Quantitative and qualitative retinal microvascular characteristics and blood pressure",
+        "volume": "29",
+        "author": "Cheung",
+        "year": "2011",
+        "journal-title": "J Hypertens"
+      },
+      {
+        "key": "bib9",
+        "first-page": "495",
+        "article-title": "A new method to measure peripheral retinal vascular caliber over an extended area",
+        "volume": "17",
+        "author": "Cheung",
+        "year": "2010",
+        "journal-title": "Microcirculation"
+      },
+      {
+        "issue": "7",
+        "key": "bib13",
+        "first-page": "2859",
+        "article-title": "Retinal vessel diameters and their associations with age and blood pressure",
+        "volume": "43",
+        "author": "Wong",
+        "year": "2002",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "issue": "2",
+        "key": "bib14",
+        "first-page": "156",
+        "article-title": "Retinal vascular imaging: a new tool in microvascular disease research",
+        "volume": "1",
+        "author": "Liew",
+        "year": "2008",
+        "journal-title": "Circulation"
+      },
+      {
+        "issue": "3",
+        "key": "bib15",
+        "doi-asserted-by": "publisher",
+        "first-page": "464",
+        "DOI": "10.1038/s41433-023-02724-4",
+        "article-title": "AI-integrated ocular imaging for predicting cardiovascular disease: advancements and future outlook",
+        "volume": "38",
+        "author": "Huang",
+        "year": "2024",
+        "journal-title": "Eye"
+      },
+      {
+        "key": "bib16",
+        "doi-asserted-by": "publisher",
+        "first-page": "e233",
+        "DOI": "10.1038/tp.2012.150",
+        "article-title": "Retinal vascular biomarkers for early detection and monitoring of Alzheimer's disease",
+        "volume": "3",
+        "author": "Frost",
+        "year": "2013",
+        "journal-title": "Transl Psychiatry"
+      },
+      {
+        "issue": "2",
+        "key": "bib17",
+        "doi-asserted-by": "publisher",
+        "first-page": "203",
+        "DOI": "10.1038/s41592-020-01008-z",
+        "article-title": "NNU-Net: a selfconfiguring method for deep learning-based biomedical image segmentation",
+        "volume": "18",
+        "author": "Isensee",
+        "year": "2021",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "bib19",
+        "doi-asserted-by": "publisher",
+        "first-page": "102929",
+        "DOI": "10.1016/j.media.2023.102929",
+        "article-title": "Stimulus-guided adaptive transformer network for retinal blood vessel segmentation in fundus images",
+        "volume": "89",
+        "author": "Lin",
+        "year": "2023",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "issue": "5",
+        "key": "bib21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1088/1361-6579/ad3d28",
+        "article-title": "Lunet: deep learning for the segmentation of arterioles and venules in high resolution fundus images",
+        "volume": "45",
+        "author": "Fhima",
+        "year": "2024",
+        "journal-title": "Physiol Meas"
+      },
+      {
+        "key": "bib23",
+        "doi-asserted-by": "publisher",
+        "first-page": "107522",
+        "DOI": "10.1016/j.cmpb.2023.107522",
+        "article-title": "Fundusq-net: a regression quality assessment deep learning algorithm for fundus images quality grading",
+        "volume": "239",
+        "author": "Abramovich",
+        "year": "2023",
+        "journal-title": "Comput Methods Programs Biomed"
+      },
+      {
+        "issue": "3",
+        "key": "bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "426",
+        "DOI": "10.1038/s41433-023-02717-3",
+        "article-title": "Image quality assessment of retinal fundus photographs for diabetic retinopathy in the machine learning era: a review",
+        "volume": "38",
+        "author": "Gon",
+        "year": "2024",
+        "journal-title": "Eye"
+      },
+      {
+        "issue": "7",
+        "key": "bib25",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1167/tvst.11.7.12",
+        "article-title": "AutoMorph: automated retinal vascular morphology quantification via a deep learning pipeline",
+        "volume": "11",
+        "author": "Zhou",
+        "year": "2022",
+        "journal-title": "Transl Vis Sci Technol"
+      },
+      {
+        "issue": "5",
+        "key": "bib26",
+        "doi-asserted-by": "publisher",
+        "first-page": "478",
+        "DOI": "10.1001/jamapsychiatry.2023.0171",
+        "article-title": "Association between retinal features from multimodal imaging and schizophrenia",
+        "volume": "80",
+        "author": "Wagner",
+        "year": "2023",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "key": "bib27",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eclinm.2024.102493",
+        "article-title": "Associations between unilateral amblyopia in childhood and cardiometabolic disorders in adult life: a cross-sectional and longitudinal analysis of the UK Biobank",
+        "volume": "70",
+        "author": "Wagner",
+        "year": "2024",
+        "journal-title": "EClinicalMedicine"
+      },
+      {
+        "issue": "12",
+        "key": "bib28",
+        "doi-asserted-by": "publisher",
+        "first-page": "30",
+        "DOI": "10.1167/iovs.65.12.30",
+        "article-title": "A new retest- stable tortuosity metric for retinal vessel analyses",
+        "volume": "65",
+        "author": "David Giesser",
+        "year": "2024",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "issue": "6",
+        "key": "bib29",
+        "doi-asserted-by": "publisher",
+        "first-page": "10",
+        "DOI": "10.1167/iovs.65.6.10",
+        "article-title": "Applicability of oculomics for individual risk prediction: repeatability and robustness of retinal fractal dimension using DART and AutoMorph",
+        "volume": "65",
+        "author": "Engelmann",
+        "year": "2024",
+        "journal-title": "Invest Ophthalmol Vis Sci"
+      },
+      {
+        "issue": "1",
+        "key": "bib30",
+        "doi-asserted-by": "publisher",
+        "first-page": "257",
+        "DOI": "10.1038/s41597-024-03086-6",
+        "article-title": "Leuven-Haifa high-resolution fundus image dataset for retinal blood vessel segmentation and glaucoma diagnosis",
+        "volume": "11",
+        "author": "Van Eijgen",
+        "year": "2024",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "1",
+        "key": "bib33",
+        "doi-asserted-by": "publisher",
+        "first-page": "014503",
+        "DOI": "10.1117/1.JMI.4.1.014503",
+        "article-title": "Dr Hagis—a fundus image database for the automatic extraction of retinal surface vessels from diabetic patients",
+        "volume": "4",
+        "author": "Holm",
+        "year": "2017",
+        "journal-title": "J Med Imaging (Bellingham)"
+      },
+      {
+        "key": "bib34",
+        "doi-asserted-by": "publisher",
+        "first-page": "397",
+        "DOI": "10.1038/s41597-022-01507-y",
+        "article-title": "The reta benchmark for retinal vascular tree analysis",
+        "volume": "9",
+        "author": "Lyu",
+        "year": "2022",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "bib35",
+        "doi-asserted-by": "publisher",
+        "first-page": "475",
+        "DOI": "10.1038/s41597-022-01564-3",
+        "article-title": "Fives: a fundus image dataset for artificial intelligence based vessel segmentation",
+        "volume": "9",
+        "author": "Jin",
+        "year": "2022",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "bib37",
+        "doi-asserted-by": "publisher",
+        "first-page": "102340",
+        "DOI": "10.1016/j.media.2021.102340",
+        "article-title": "Tw-gan: topology and width aware gan for retinal artery/vein classification",
+        "volume": "77",
+        "author": "Chen",
+        "year": "2022",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "issue": "12",
+        "key": "bib39",
+        "doi-asserted-by": "publisher",
+        "first-page": "2631",
+        "DOI": "10.1109/TMI.2016.2587062",
+        "article-title": "Robust retinal vessel segmentation via locally adaptive derivative frames in orientation scores",
+        "volume": "35",
+        "author": "Zhang",
+        "year": "2016",
+        "journal-title": "IEEE Trans Med Imaging"
+      },
+      {
+        "key": "bib42",
+        "doi-asserted-by": "publisher",
+        "first-page": "291",
+        "DOI": "10.1038/s41597-022-01388-1",
+        "article-title": "Papila: dataset with fundus images and clinical data of both eyes of the same patient for glaucoma assessment",
+        "volume": "9",
+        "author": "Kovalyk",
+        "year": "2022",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "10",
+        "key": "bib44",
+        "doi-asserted-by": "publisher",
+        "first-page": "2828",
+        "DOI": "10.1109/TMI.2022.3172773",
+        "article-title": "Adam challenge: detecting age-related macular degeneration from fundus images",
+        "volume": "41",
+        "author": "Fang",
+        "year": "2022",
+        "journal-title": "IEEE Trans Med Imaging"
+      },
+      {
+        "key": "bib45",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1038/s41597-024-02911-2",
+        "article-title": "Open fundus photograph dataset with pathologic myopia recognition and anatomical structure annotation",
+        "volume": "11",
+        "author": "Fang",
+        "year": "2024",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "4",
+        "key": "bib47",
+        "doi-asserted-by": "publisher",
+        "first-page": "501",
+        "DOI": "10.1109/TMI.2004.825627",
+        "article-title": "Ridge-based vessel segmentation in color images of the retina",
+        "volume": "23",
+        "author": "Staal",
+        "year": "2004",
+        "journal-title": "IEEE Trans Med Imaging"
+      },
+      {
+        "key": "bib48",
+        "doi-asserted-by": "publisher",
+        "first-page": "101570",
+        "DOI": "10.1016/j.media.2019.101570",
+        "article-title": "Refuge challenge: a unified framework for evaluating automated methods for glaucoma assessment from fundus photographs",
+        "volume": "59",
+        "author": "Orlando",
+        "year": "2020",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "issue": "3",
+        "key": "bib49",
+        "doi-asserted-by": "publisher",
+        "first-page": "509",
+        "DOI": "10.1177/193229680900300315",
+        "article-title": "Eyepacs: an adaptable telemedicine system for diabetic retinopathy screening",
+        "volume": "3",
+        "author": "Cuadros",
+        "year": "2009",
+        "journal-title": "J Diabetes Sci Technol"
+      },
+      {
+        "key": "bib50",
+        "doi-asserted-by": "publisher",
+        "first-page": "483",
+        "DOI": "10.1007/s10654-020-00640-5",
+        "article-title": "Objectives, design and main findings until 2020 from the Rotterdam Study",
+        "volume": "35",
+        "author": "Ikram",
+        "year": "2020",
+        "journal-title": "Eur J Epidemiol"
+      },
+      {
+        "issue": "3",
+        "key": "bib51",
+        "doi-asserted-by": "publisher",
+        "first-page": "602",
+        "DOI": "10.3390/nu15030602",
+        "article-title": "Lifestyle intervention randomized controlled trial for age-related macular degeneration (AMD-Life): study design",
+        "volume": "15",
+        "author": "de Koning-Backus",
+        "year": "2023",
+        "journal-title": "Nutrients"
+      },
+      {
+        "issue": "2",
+        "key": "bib52",
+        "doi-asserted-by": "publisher",
+        "first-page": "115",
+        "DOI": "10.1001/jamaophthalmol.2021.5346",
+        "article-title": "Prevalence of myopic macular features in Dutch individuals of European ancestry with high myopia",
+        "volume": "140",
+        "author": "Haarman",
+        "year": "2022",
+        "journal-title": "JAMA Ophthalmol"
+      },
+      {
+        "issue": "2",
+        "key": "bib55",
+        "doi-asserted-by": "publisher",
+        "first-page": "125",
+        "DOI": "10.3390/info11020125",
+        "article-title": "Albumentations: fast and flexible image augmentations",
+        "volume": "11",
+        "author": "Buslaev",
+        "year": "2020",
+        "journal-title": "Information"
+      },
+      {
+        "key": "bib58",
+        "doi-asserted-by": "publisher",
+        "first-page": "128055",
+        "DOI": "10.1016/j.neucom.2024.128055",
+        "article-title": "A plug-and-play framework for curvilinear structure segmentation based on a learned reconnecting regularization",
+        "volume": "599",
+        "author": "Carneiro-Esteves",
+        "year": "2024",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "bib59",
+        "doi-asserted-by": "publisher",
+        "first-page": "9593",
+        "DOI": "10.1038/s41467-024-52334-1",
+        "article-title": "Phenotypic and genetic characteristics of retinal vascular parameters and their association with diseases",
+        "volume": "15",
+        "author": "Ortín Vela",
+        "year": "2024",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "3391",
+        "DOI": "10.1109/IEMBS.2011.6090918",
+        "article-title": "Vampire: vessel assessment and measurement platform for images of the retina",
+        "volume-title": "2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+        "author": "Perez-Rovira",
+        "year": "2011"
+      },
+      {
+        "key": "bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1109/BRC.2013.6487552",
+        "article-title": "Novel vampire algorithms for quantitative analysis of the retinal vasculature",
+        "volume-title": "Proceedings of the 2013 ISSNIP Biosignals and Biorobotics Conference: Biosignals and Robotics for Better and Safer Living (BRC)",
+        "author": "Trucco",
+        "year": "2013"
+      },
+      {
+        "key": "bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1002/9781118715321.ch3",
+        "article-title": "Morphometric measurements of the retinal vasculature in fundus images with Vampire",
+        "volume-title": "Biomedical Image Understanding: Methods and Applications",
+        "author": "Trucco",
+        "year": "2015"
+      },
+      {
+        "key": "bib18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/WACV45572.2020.9093621",
+        "article-title": "Iternet: retinal image segmentation utilizing structural redundancy in vessel networks",
+        "volume-title": "The IEEE Winter Conference on Applications of Computer Vision (WACV)",
+        "author": "Li",
+        "year": "2020"
+      },
+      {
+        "key": "bib20",
+        "first-page": "6174",
+        "article-title": "State-of-the-art retinal vessel segmentation with minimalistic models.",
+        "volume-title": "Sci Rep.",
+        "author": "Galdran",
+        "year": "2022"
+      },
+      {
+        "key": "bib22",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-030-32239-7_6",
+        "volume-title": "Evaluation of Retinal Image Quality Assessment Networks in Different Color-Spaces",
+        "author": "Fu",
+        "year": "2019"
+      },
+      {
+        "key": "bib31",
+        "article-title": "High resolution fundus (hrf) image database",
+        "author": "Budai",
+        "year": "2013"
+      },
+      {
+        "key": "bib32",
+        "article-title": "Chase db1: retinal vessel reference dataset",
+        "author": "Moazam Fraz",
+        "year": "2012"
+      },
+      {
+        "key": "bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "485",
+        "DOI": "10.1109/CBMS.2013.6627847",
+        "article-title": "A manually-labeled, artery/vein classified benchmark for the drive dataset",
+        "volume-title": "Proceedings of the 26th IEEE International Symposium on Computer-Based Medical Systems",
+        "author": "Qureshi",
+        "year": "2013"
+      },
+      {
+        "key": "bib38",
+        "first-page": "65",
+        "article-title": "Towards a glaucoma risk index based on simulated hemodynamics from fundus images",
+        "volume-title": "Medical Image Computing and Computer Assisted Intervention–MICCAI 2018",
+        "author": "Orlando",
+        "year": "2018"
+      },
+      {
+        "key": "bib40",
+        "article-title": "Avrdb: annotated dataset for vessel segmentation and calculation of arteriovenous ratio",
+        "volume-title": "Proceedings of the Int'l Conf. IP, Comp. Vision, and Pattern Recognition (IPCV'17)",
+        "author": "Akbar",
+        "year": "2017"
+      },
+      {
+        "key": "bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "3065",
+        "DOI": "10.1109/IEMBS.2010.5626137",
+        "article-title": "Origa(-light): an online retinal fundus image database for glaucoma analysis and research",
+        "volume-title": "2010 Annual International Conference of the IEEE Engineering in Medicine and Biology",
+        "author": "Zhang",
+        "year": "2010"
+      },
+      {
+        "key": "bib43",
+        "article-title": "Indian diabetic retinopathy image dataset (IDRID)",
+        "author": "Porwal",
+        "year": "2018"
+      },
+      {
+        "key": "bib46",
+        "article-title": "Refuge2 challenge: a treasure trove for multi-dimension analysis and evaluation in glaucoma screening",
+        "author": "Fang",
+        "year": "2022"
+      },
+      {
+        "key": "bib53",
+        "first-page": "1",
+        "article-title": "G1020: a benchmark retinal fundus image dataset for computer-aided glaucoma detection",
+        "volume-title": "International Joint Conference on Neural Network",
+        "author": "Bajwa",
+        "year": "2020"
+      },
+      {
+        "key": "bib54",
+        "article-title": "nnU-Net for PyTorch — NVIDIA NGC — catalog.ngc.nvidia.com",
+        "author": "nVidia"
+      },
+      {
+        "key": "bib56",
+        "doi-asserted-by": "crossref",
+        "first-page": "16100",
+        "DOI": "10.1109/CVPR46437.2021.01584",
+        "article-title": "Graph stacked hourglass networks for 3D human pose estimation",
+        "volume-title": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "author": "Xu",
+        "year": "2021"
+      },
+      {
+        "key": "bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "16555",
+        "DOI": "10.1109/CVPR46437.2021.01629",
+        "article-title": "clDice—a novel topology-preserving loss function for tubular structure segmentation",
+        "volume-title": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "author": "Shit",
+        "year": "2021"
+      }
+    ],
+    "container-title": [
+      "Translational Vision Science &amp; Technology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://tvst.arvojournals.org/article.aspx?articleid=2810436",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          23
+        ]
+      ],
+      "date-time": "2025-07-23T14:00:49Z",
+      "timestamp": 1753279249000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://tvst.arvojournals.org/article.aspx?articleid=2810436"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          23
+        ]
+      ]
+    },
+    "references-count": 59,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1167/tvst.14.7.19",
+    "relation": {},
+    "ISSN": [
+      "2164-2591"
+    ],
+    "issn-type": [
+      {
+        "value": "2164-2591",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          23
+        ]
+      ]
+    }
+  }
+}
