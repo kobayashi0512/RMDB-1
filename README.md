@@ -42,4 +42,4 @@ This standard-library check validates file hashes, Python syntax, aggregate tabl
 
 ## Rights and citation
 
-No new open-source or dataset license is granted by this upload. Ownership and third-party terms must be confirmed before public release. Cite the eventual approved manuscript; no DOI or publication acceptance is claimed. The previous private `kobayashi0512/RMDB` repository remains unchanged.
+Public visibility does not grant an open-source or dataset licence. No project-wide code licence is provided; source code and third-party materials remain subject to their respective rights and terms. Cite the eventual approved manuscript; no DOI or publication acceptance is claimed. The separate `kobayashi0512/RMDB` repository contains its own analysis history and release assets.
