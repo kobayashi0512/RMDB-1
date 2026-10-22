@@ -4,7 +4,7 @@ Research archive for **RMDB Dual Readouts for Retinal Vascular Measurement**, re
 
 Repository: https://github.com/kobayashi0512/RMDB-1
 
-This repository is **private**. It contains the current manuscript text, analysis code, aggregate experimental results and historical project documentation. It is not a complete backup of the 76 GB local experimental workspace or a self-contained reproduction environment.
+This repository is publicly visible. Public visibility does not change the project’s data-access boundaries or grant reuse rights. It contains the current manuscript text, analysis code, aggregate experimental results and historical project documentation. It is not a complete backup of the 76 GB local experimental workspace or a self-contained reproduction environment.
 
 ## Current manuscript and evidence
 
